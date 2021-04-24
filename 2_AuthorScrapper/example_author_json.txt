@@ -1,0 +1,2322 @@
+#Not Json but helpful
+REDDIT_TYPES = {
+'REDDIT_COMMENT':'t1_',
+'REDDIT_ACCOUNT':'t2_',
+'REDDIT_LINK':'t3_',
+'REDDIT_MESSAGE':'t4_',
+'REDDIT_SUBREDDIT':'t5_',
+'REDDIT_AWARD':'t6_'
+    }
+
+#Json
+{
+   "kind":"Listing",
+   "data":{
+      "modhash":"blyyck1d1c518d1baf3c18704c4f00ccc01e697bb597c7f255",
+      "dist":25,
+      "children":[
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cvfdyv",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey3t4su",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":9,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566773031.0,
+               "send_replies":true,
+               "parent_id":"t3_cvfdyv",
+               "score":3,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2qh1i",
+               "body":"I usually start with breathing exercises.  I like to inhale to a 4 count, hold for 4, breath out for 4 and hold again for 4, then increase to 5 all the way up to 10 or 12.  \n\nI also try to engage in some mindfulness techniques. Stop thinking about things in my head and just experience my surroundings.  Feel my chest go in and out as I breathe.  Listen to the sound of the air coming out of my nose.  Feel the air on my skin, and experience life without judgment.  \n\nThe more you do these things, even when you are not anxious, the easier it gets to do when it feels like things are piling up.",
+               "link_title":"How can one prevent shortness of breath (due to stress/anxiety)?",
+               "author_flair_css_class":null,
+               "name":"t1_ey3t4su",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;I usually start with breathing exercises.  I like to inhale to a 4 count, hold for 4, breath out for 4 and hold again for 4, then increase to 5 all the way up to 10 or 12.  &lt;/p&gt;\n\n&lt;p&gt;I also try to engage in some mindfulness techniques. Stop thinking about things in my head and just experience my surroundings.  Feel my chest go in and out as I breathe.  Listen to the sound of the air coming out of my nose.  Feel the air on my skin, and experience life without judgment.  &lt;/p&gt;\n\n&lt;p&gt;The more you do these things, even when you are not anxious, the easier it gets to do when it feels like things are piling up.&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/AskReddit/comments/cvfdyv/how_can_one_prevent_shortness_of_breath_due_to/ey3t4su/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/AskReddit/comments/cvfdyv/how_can_one_prevent_shortness_of_breath_due_to/",
+               "report_reasons":null,
+               "link_author":"[deleted]",
+               "subreddit":"AskReddit",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/AskReddit/comments/cvfdyv/how_can_one_prevent_shortness_of_breath_due_to/",
+               "created":1566801831.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/AskReddit",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":3
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cvauhi",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey2zgrs",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":5,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566751745.0,
+               "send_replies":true,
+               "parent_id":"t3_cvauhi",
+               "score":5,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2s30g",
+               "body":"Generally, sit and do both.  But if I really have to piss I will stand first then sit.  Sometimes if you really have to go and you sit the urethra gets pinched and it can be painful.",
+               "link_title":"Men, when you have to go number 1 &amp; 2, do you sit and do both or do you stand to do #1 and sit for #2?",
+               "author_flair_css_class":null,
+               "name":"t1_ey2zgrs",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;Generally, sit and do both.  But if I really have to piss I will stand first then sit.  Sometimes if you really have to go and you sit the urethra gets pinched and it can be painful.&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/AskMen/comments/cvauhi/men_when_you_have_to_go_number_1_2_do_you_sit_and/ey2zgrs/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/AskMen/comments/cvauhi/men_when_you_have_to_go_number_1_2_do_you_sit_and/",
+               "report_reasons":null,
+               "link_author":"Pandepon",
+               "subreddit":"AskMen",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/AskMen/comments/cvauhi/men_when_you_have_to_go_number_1_2_do_you_sit_and/",
+               "created":1566780545.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/AskMen",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":5
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cvao7q",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey2z4pe",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":false,
+               "author":"NeedsAVet",
+               "num_comments":9,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566751515.0,
+               "send_replies":true,
+               "parent_id":"t3_cvao7q",
+               "score":7,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2ssp7",
+               "body":"I wonder about this a lot as well.  Eventually, everyone needs to have a serious conversation about population growth, given right now the number one threat to us is ourselves, and if we continue to grow as a population we will become less and less sustainable.  But the duality is that people who don't care about this are still having kids, and the percentage of the population who does give a fuck goes down. I have one kid and I try my best to live a sustainable lifestyle and to educate the people around me about the importance of sustainability and how to achieve it.   Regardless of how many kids you have, I think that is the best you can really do.",
+               "link_title":"Is it selfish to want another child/children with climate change and all the horrible stuff in this world happening?",
+               "author_flair_css_class":null,
+               "name":"t1_ey2z4pe",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;I wonder about this a lot as well.  Eventually, everyone needs to have a serious conversation about population growth, given right now the number one threat to us is ourselves, and if we continue to grow as a population we will become less and less sustainable.  But the duality is that people who don&amp;#39;t care about this are still having kids, and the percentage of the population who does give a fuck goes down. I have one kid and I try my best to live a sustainable lifestyle and to educate the people around me about the importance of sustainability and how to achieve it.   Regardless of how many kids you have, I think that is the best you can really do.&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/TooAfraidToAsk/comments/cvao7q/is_it_selfish_to_want_another_childchildren_with/ey2z4pe/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/TooAfraidToAsk/comments/cvao7q/is_it_selfish_to_want_another_childchildren_with/",
+               "report_reasons":null,
+               "link_author":"hannahwal13",
+               "subreddit":"TooAfraidToAsk",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/TooAfraidToAsk/comments/cvao7q/is_it_selfish_to_want_another_childchildren_with/",
+               "created":1566780315.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/TooAfraidToAsk",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":7
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cvacoi",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey2w46j",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":false,
+               "author":"NeedsAVet",
+               "num_comments":32,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566749664.0,
+               "send_replies":true,
+               "parent_id":"t3_cvacoi",
+               "score":6,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2t08x",
+               "body":"You can't change the past, but you can change the way you view your present.  Husband and Father are just terms.  A man's second kid is no less important than his first.  Just because he already has one kid doesn't mean he loves the next any less.  What you ARE doing is making him happy, right now.  Unless you ruin it by being jealous of his past.",
+               "link_title":"How do I \u201cget over\u201d the feelings of being second",
+               "author_flair_css_class":null,
+               "name":"t1_ey2w46j",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;You can&amp;#39;t change the past, but you can change the way you view your present.  Husband and Father are just terms.  A man&amp;#39;s second kid is no less important than his first.  Just because he already has one kid doesn&amp;#39;t mean he loves the next any less.  What you ARE doing is making him happy, right now.  Unless you ruin it by being jealous of his past.&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/stepparents/comments/cvacoi/how_do_i_get_over_the_feelings_of_being_second/ey2w46j/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/stepparents/comments/cvacoi/how_do_i_get_over_the_feelings_of_being_second/",
+               "report_reasons":null,
+               "link_author":"[deleted]",
+               "subreddit":"stepparents",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/stepparents/comments/cvacoi/how_do_i_get_over_the_feelings_of_being_second/",
+               "created":1566778464.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/stepparents",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":6
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cva67b",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey2ujan",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":false,
+               "author":"NeedsAVet",
+               "num_comments":13,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566748650.0,
+               "send_replies":true,
+               "parent_id":"t3_cva67b",
+               "score":13,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2rbuf",
+               "body":"You don't have to wait.  Using your lungs is a great way to start the healing process.  Plus a lot of people find a physical hobby is a great way to change habits and overcome withdrawal.  \n\nIf you are having issues with breathing take it slow and avoid chlorine.  Maybe start out with some light lifting and warm up with slow walking.",
+               "link_title":"I want to start going to the gym, but how soon can I do that after quitting smoking?",
+               "author_flair_css_class":null,
+               "name":"t1_ey2ujan",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;You don&amp;#39;t have to wait.  Using your lungs is a great way to start the healing process.  Plus a lot of people find a physical hobby is a great way to change habits and overcome withdrawal.  &lt;/p&gt;\n\n&lt;p&gt;If you are having issues with breathing take it slow and avoid chlorine.  Maybe start out with some light lifting and warm up with slow walking.&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/stopsmoking/comments/cva67b/i_want_to_start_going_to_the_gym_but_how_soon_can/ey2ujan/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/stopsmoking/comments/cva67b/i_want_to_start_going_to_the_gym_but_how_soon_can/",
+               "report_reasons":null,
+               "link_author":"Velcade6",
+               "subreddit":"stopsmoking",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/stopsmoking/comments/cva67b/i_want_to_start_going_to_the_gym_but_how_soon_can/",
+               "created":1566777450.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/stopsmoking",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":13
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cv9xxk",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey2sxqd",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":false,
+               "author":"NeedsAVet",
+               "num_comments":14,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566747582.0,
+               "send_replies":true,
+               "parent_id":"t3_cv9xxk",
+               "score":13,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2w844",
+               "body":"According to other reddit posts you should get a white noise machine and \n\n \"Place the palms of your hands over your ears with fingers resting gently on the back of your head. Your middle fingers should point toward one another just above the base of your skull. Place your index fingers on top of you middle fingers and snap them (the index fingers) onto the skull making a loud, drumming noise. Repeat 40-50 times. Some people experience immediate relief with this method. Repeat several times a day for as long as necessary to reduce tinnitus.Dr. Jan Strydom, of A2Z of Health, Beauty and Fintess.org.\" \n\n&amp;#x200B;\n\nOr you know, go see a doctor.",
+               "link_title":"Why the hell does my ear do the ringing thing.",
+               "author_flair_css_class":null,
+               "name":"t1_ey2sxqd",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;According to other reddit posts you should get a white noise machine and &lt;/p&gt;\n\n&lt;p&gt;&amp;quot;Place the palms of your hands over your ears with fingers resting gently on the back of your head. Your middle fingers should point toward one another just above the base of your skull. Place your index fingers on top of you middle fingers and snap them (the index fingers) onto the skull making a loud, drumming noise. Repeat 40-50 times. Some people experience immediate relief with this method. Repeat several times a day for as long as necessary to reduce tinnitus.Dr. Jan Strydom, of A2Z of Health, Beauty and Fintess.org.&amp;quot; &lt;/p&gt;\n\n&lt;p&gt;&amp;#x200B;&lt;/p&gt;\n\n&lt;p&gt;Or you know, go see a doctor.&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/NoStupidQuestions/comments/cv9xxk/why_the_hell_does_my_ear_do_the_ringing_thing/ey2sxqd/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/NoStupidQuestions/comments/cv9xxk/why_the_hell_does_my_ear_do_the_ringing_thing/",
+               "report_reasons":null,
+               "link_author":"doomlio",
+               "subreddit":"NoStupidQuestions",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/NoStupidQuestions/comments/cv9xxk/why_the_hell_does_my_ear_do_the_ringing_thing/",
+               "created":1566776382.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/NoStupidQuestions",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":13
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cv6qnx",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey2ppmt",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":738,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566745410.0,
+               "send_replies":true,
+               "parent_id":"t1_ey27imf",
+               "score":1,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2sokd",
+               "body":"&gt;If Clevertraders is publicly traded, doesnt this mess up the value of the company itself? Wouldn't this approach hurt the shareholders since the proffit is going to Shellsell instead?",
+               "link_title":"ELI5: How exactly do big international companies like apple avoid paying taxes (or just at a very low rate)?",
+               "author_flair_css_class":null,
+               "name":"t1_ey2ppmt",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;blockquote&gt;\n&lt;p&gt;If Clevertraders is publicly traded, doesnt this mess up the value of the company itself? Wouldn&amp;#39;t this approach hurt the shareholders since the proffit is going to Shellsell instead?&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/explainlikeimfive/comments/cv6qnx/eli5_how_exactly_do_big_international_companies/ey2ppmt/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/explainlikeimfive/comments/cv6qnx/eli5_how_exactly_do_big_international_companies/",
+               "report_reasons":null,
+               "link_author":"Nizde",
+               "subreddit":"explainlikeimfive",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/explainlikeimfive/comments/cv6qnx/eli5_how_exactly_do_big_international_companies/",
+               "created":1566774210.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/explainlikeimfive",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":1
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cv6qnx",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey2nqwb",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":738,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566744134.0,
+               "send_replies":true,
+               "parent_id":"t1_ey2dido",
+               "score":-5,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2sokd",
+               "body":"&gt;To be fair, if I made 50k this year and bought 100k house on a mortgage I am technically 50k in the whole as well. I would still have to pay taxes on my income.    \n&gt;  \n&gt;  \n&gt;  \n&gt;I also heard that part of the reason they don't pay is because of depreciation on assetts.  But doesn't that mean that the rest of the tax payers are essentially footing the bill for thier assets?",
+               "link_title":"ELI5: How exactly do big international companies like apple avoid paying taxes (or just at a very low rate)?",
+               "author_flair_css_class":null,
+               "name":"t1_ey2nqwb",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;blockquote&gt;\n&lt;p&gt;To be fair, if I made 50k this year and bought 100k house on a mortgage I am technically 50k in the whole as well. I would still have to pay taxes on my income.    &lt;/p&gt;\n\n&lt;p&gt;I also heard that part of the reason they don&amp;#39;t pay is because of depreciation on assetts.  But doesn&amp;#39;t that mean that the rest of the tax payers are essentially footing the bill for thier assets?&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/explainlikeimfive/comments/cv6qnx/eli5_how_exactly_do_big_international_companies/ey2nqwb/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/explainlikeimfive/comments/cv6qnx/eli5_how_exactly_do_big_international_companies/",
+               "report_reasons":null,
+               "link_author":"Nizde",
+               "subreddit":"explainlikeimfive",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/explainlikeimfive/comments/cv6qnx/eli5_how_exactly_do_big_international_companies/",
+               "created":1566772934.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/explainlikeimfive",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":-5
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cusgc8",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ey1ino9",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":680,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566700678.0,
+               "send_replies":true,
+               "parent_id":"t1_ey0ofwy",
+               "score":2,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_3fqup",
+               "body":"&gt;I love your take on this.  Never got caught up in that lifestyle, but across the board there are people who don't want to take responsibility for thier shity decisions.  Without personal accountability for your actions, you never learn from your mistakes. You just blame the mistakes on other people.  \n&gt;  \n&gt;  \n&gt;  \n&gt;Was it the legal consequenecs that got you out of that life?",
+               "link_title":"So good but so terrible",
+               "author_flair_css_class":null,
+               "name":"t1_ey1ino9",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;blockquote&gt;\n&lt;p&gt;I love your take on this.  Never got caught up in that lifestyle, but across the board there are people who don&amp;#39;t want to take responsibility for thier shity decisions.  Without personal accountability for your actions, you never learn from your mistakes. You just blame the mistakes on other people.  &lt;/p&gt;\n\n&lt;p&gt;Was it the legal consequenecs that got you out of that life?&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/ATBGE/comments/cusgc8/so_good_but_so_terrible/ey1ino9/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/ATBGE/comments/cusgc8/so_good_but_so_terrible/",
+               "report_reasons":null,
+               "link_author":"TypicalPhilip",
+               "subreddit":"ATBGE",
+               "author_flair_text":null,
+               "link_url":"https://i.redd.it/7teyr1fixdi31.jpg",
+               "created":1566729478.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/ATBGE",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":2
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_cu74aq",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"exrvdgc",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":27,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1566525070.0,
+               "send_replies":true,
+               "parent_id":"t3_cu74aq",
+               "score":1,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2r4eo",
+               "body":"What do you feel makes you different than someone not on the spectrum?",
+               "link_title":"I'm autistic, AMA",
+               "author_flair_css_class":null,
+               "name":"t1_exrvdgc",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;What do you feel makes you different than someone not on the spectrum?&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/AMA/comments/cu74aq/im_autistic_ama/exrvdgc/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/AMA/comments/cu74aq/im_autistic_ama/",
+               "report_reasons":null,
+               "link_author":"[deleted]",
+               "subreddit":"AMA",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/AMA/comments/cu74aq/im_autistic_ama/",
+               "created":1566553870.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/AMA",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":1
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_co66sl",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ewheohf",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":642,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1565405782.0,
+               "send_replies":true,
+               "parent_id":"t1_ewgtpty",
+               "score":1,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2sa3m",
+               "body":"I guess we know where the 3 is",
+               "link_title":"The single worst clock I have ever seen. I actually said aloud \"Whyyyy\"",
+               "author_flair_css_class":null,
+               "name":"t1_ewheohf",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;I guess we know where the 3 is&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/CrappyDesign/comments/co66sl/the_single_worst_clock_i_have_ever_seen_i/ewheohf/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/CrappyDesign/comments/co66sl/the_single_worst_clock_i_have_ever_seen_i/",
+               "report_reasons":null,
+               "link_author":"patchestheshark",
+               "subreddit":"CrappyDesign",
+               "author_flair_text":null,
+               "link_url":"https://i.redd.it/hqpufqn0sgf31.jpg",
+               "created":1565434582.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/CrappyDesign",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":1
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_9mu10r",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"e7htd69",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":2706,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1539143582.0,
+               "send_replies":true,
+               "parent_id":"t1_e7hg683",
+               "score":3,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2qh1e",
+               "body":"I set up and tear down concerts with IATSE for my side hustle. Most bands when they get off the stage hustle to the bus with security.  Marcus and the band sat backstage after the show and played ping pong while we tore everything down.  The table was one of the last things to get packed up. The roadie grabbed me and a few of the other large crew members to 'intimidate' them into giving the table up.  The band shot the shit with us for a few minutes and gave the table up.   Coolest band I have ever worked with. \n",
+               "link_title":"Mumford and Sons playing their famous \"The Cave\", before it was famous, outside a Pizzeria",
+               "author_flair_css_class":null,
+               "name":"t1_e7htd69",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;I set up and tear down concerts with IATSE for my side hustle. Most bands when they get off the stage hustle to the bus with security.  Marcus and the band sat backstage after the show and played ping pong while we tore everything down.  The table was one of the last things to get packed up. The roadie grabbed me and a few of the other large crew members to &amp;#39;intimidate&amp;#39; them into giving the table up.  The band shot the shit with us for a few minutes and gave the table up.   Coolest band I have ever worked with. &lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/videos/comments/9mu10r/mumford_and_sons_playing_their_famous_the_cave/e7htd69/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/videos/comments/9mu10r/mumford_and_sons_playing_their_famous_the_cave/",
+               "report_reasons":null,
+               "link_author":"[deleted]",
+               "subreddit":"videos",
+               "author_flair_text":null,
+               "link_url":"https://www.youtube.com/watch?v=o0BoSQbk8pg",
+               "created":1539172382.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/videos",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":3
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_7qzpf8",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"dstm4g4",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":4,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1516207671.0,
+               "send_replies":true,
+               "parent_id":"t3_7qzpf8",
+               "score":2,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2x79t",
+               "body":"It's a tough road, but you are off to a good start.  You sound motivated to make some changes.  Reddit has a lot of good subs on health and fitness. I don't have anything specific along those lines.  But I would give the following\n\n1)  Most of the weight you will lose, you lose through diet, not exercise.  Half an hour a day of cardio will get you 300-500 calories depending on what you are doing.  A snickers bar will make most of that back up. \n\n2) The best way to make sure you have a good diet is to count calories.  Use my fitness pal or another app.  Be honest and accurate.  Know how much you are putting in your body.  I always give myself a week where I am counting calories without trying to eat healthier, and then transition into staying in my limit.  That way you can see exactly how unhealthy some of the stuff you eat can be.\n\n3) What you get from exercise is a healthier body (heart health, pulmonary health, muscle), and motivation to eat better.  \n\n4) The only way you are likely to maintain excersize is to find something you enjoy.  Try different things.  Excersize is not just sitting on a treadmill.  It can be dancing, skiiing, biking, hiking or anything that gets your heart rate up.  Aim for at least 30 min per day 5 days per week.  Try new workouts and find something you look forward to.  I love biking. I can't wait to get out and ride.  When you love it, it no longer becomes a struggle.  \n\n5) We always want to change our physical habbits.  But what you really need to change are your mental habbits.  Write down your current habbits.  Do you eat out too much?  Why?  What do you tell yourself to justify the behavior?  For me it was the side work I was doing.  I would try to eat healthy, but then go do physical side work and say 'its alright, I worked hard today'.  That was fine every once in awhile, but most of the work comes in waves.  So I would work on my eating, and then get a bunch of side work and eat out 4-5 times a week for 3 weeks.  After that I was back in the habbit of bad eating and would keep eating out for awhile until I got it back under control.  The problem wasn't the side work.  It was that I was mentally justifying eating out when I did the work.  It was one of my 'cheats'.  Figure out when you are justifying the behavior you want to change, and be aware of it.  Next, write down a list of goals you want to accomplish and why you want to accomplish them.  Hell, put the list in your wallet.  When you find yourself in a sittuation where you want to justify the bad behavior pull out the list and remind yourself of your goals.  \n\n6) Finally, make a plan and stick to it.  Plan out your meals for the week so you don't get tempted to eat out.  Plan out your excersize for the week and then don't accept excuses.  If you just say, I am going to work out 3 times this week, then you will keep pushing it off.  If you say you are going to work out MWF then you know those days you need to make it happen.  \n\nThis isn't about a quick fix or a hack.  It's about changing habits.  You don't want to lose weight and then put it back on after you are done with your diet. You want a new healthy lifestyle that you can maintain for life",
+               "link_title":"I\u2019m fat and I don\u2019t want to be",
+               "author_flair_css_class":null,
+               "name":"t1_dstm4g4",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;It&amp;#39;s a tough road, but you are off to a good start.  You sound motivated to make some changes.  Reddit has a lot of good subs on health and fitness. I don&amp;#39;t have anything specific along those lines.  But I would give the following&lt;/p&gt;\n\n&lt;p&gt;1)  Most of the weight you will lose, you lose through diet, not exercise.  Half an hour a day of cardio will get you 300-500 calories depending on what you are doing.  A snickers bar will make most of that back up. &lt;/p&gt;\n\n&lt;p&gt;2) The best way to make sure you have a good diet is to count calories.  Use my fitness pal or another app.  Be honest and accurate.  Know how much you are putting in your body.  I always give myself a week where I am counting calories without trying to eat healthier, and then transition into staying in my limit.  That way you can see exactly how unhealthy some of the stuff you eat can be.&lt;/p&gt;\n\n&lt;p&gt;3) What you get from exercise is a healthier body (heart health, pulmonary health, muscle), and motivation to eat better.  &lt;/p&gt;\n\n&lt;p&gt;4) The only way you are likely to maintain excersize is to find something you enjoy.  Try different things.  Excersize is not just sitting on a treadmill.  It can be dancing, skiiing, biking, hiking or anything that gets your heart rate up.  Aim for at least 30 min per day 5 days per week.  Try new workouts and find something you look forward to.  I love biking. I can&amp;#39;t wait to get out and ride.  When you love it, it no longer becomes a struggle.  &lt;/p&gt;\n\n&lt;p&gt;5) We always want to change our physical habbits.  But what you really need to change are your mental habbits.  Write down your current habbits.  Do you eat out too much?  Why?  What do you tell yourself to justify the behavior?  For me it was the side work I was doing.  I would try to eat healthy, but then go do physical side work and say &amp;#39;its alright, I worked hard today&amp;#39;.  That was fine every once in awhile, but most of the work comes in waves.  So I would work on my eating, and then get a bunch of side work and eat out 4-5 times a week for 3 weeks.  After that I was back in the habbit of bad eating and would keep eating out for awhile until I got it back under control.  The problem wasn&amp;#39;t the side work.  It was that I was mentally justifying eating out when I did the work.  It was one of my &amp;#39;cheats&amp;#39;.  Figure out when you are justifying the behavior you want to change, and be aware of it.  Next, write down a list of goals you want to accomplish and why you want to accomplish them.  Hell, put the list in your wallet.  When you find yourself in a sittuation where you want to justify the bad behavior pull out the list and remind yourself of your goals.  &lt;/p&gt;\n\n&lt;p&gt;6) Finally, make a plan and stick to it.  Plan out your meals for the week so you don&amp;#39;t get tempted to eat out.  Plan out your excersize for the week and then don&amp;#39;t accept excuses.  If you just say, I am going to work out 3 times this week, then you will keep pushing it off.  If you say you are going to work out MWF then you know those days you need to make it happen.  &lt;/p&gt;\n\n&lt;p&gt;This isn&amp;#39;t about a quick fix or a hack.  It&amp;#39;s about changing habits.  You don&amp;#39;t want to lose weight and then put it back on after you are done with your diet. You want a new healthy lifestyle that you can maintain for life&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/beginnerfitness/comments/7qzpf8/im_fat_and_i_dont_want_to_be/dstm4g4/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/beginnerfitness/comments/7qzpf8/im_fat_and_i_dont_want_to_be/",
+               "report_reasons":null,
+               "link_author":"Browne_Syndrome",
+               "subreddit":"beginnerfitness",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/beginnerfitness/comments/7qzpf8/im_fat_and_i_dont_want_to_be/",
+               "created":1516236471.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/beginnerfitness",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":2
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_5szczc",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"ddjpgdj",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":1495,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1486675135.0,
+               "send_replies":true,
+               "parent_id":"t1_ddj35sg",
+               "score":1,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2qh13",
+               "body":"Interestingly this is called a wubba lubba and is pretty much a death sentence. ",
+               "link_title":"Wikipedia bans the Daily Mail as a source for being 'unreliable'",
+               "author_flair_css_class":null,
+               "name":"t1_ddjpgdj",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;Interestingly this is called a wubba lubba and is pretty much a death sentence. &lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/worldnews/comments/5szczc/wikipedia_bans_the_daily_mail_as_a_source_for/ddjpgdj/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/worldnews/comments/5szczc/wikipedia_bans_the_daily_mail_as_a_source_for/",
+               "report_reasons":null,
+               "link_author":"T-zex",
+               "subreddit":"worldnews",
+               "author_flair_text":null,
+               "link_url":"http://www.independent.co.uk/life-style/gadgets-and-tech/wikipedia-editors-ban-daily-mail-source-citation-unreliable-mail-online-a7570856.html",
+               "created":1486703935.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/worldnews",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":1
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_5qozyx",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"dd0ytti",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":17,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1485630276.0,
+               "send_replies":true,
+               "parent_id":"t1_dd0xbl3",
+               "score":-8,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2qhx4",
+               "body":"You start to atrophy after about 4 days.  Realistically if he only has two days a week he should be doing the same routine both days",
+               "link_title":"Advice needed. Only able to lift 2x/week.",
+               "author_flair_css_class":null,
+               "name":"t1_dd0ytti",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;You start to atrophy after about 4 days.  Realistically if he only has two days a week he should be doing the same routine both days&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/Fitness/comments/5qozyx/advice_needed_only_able_to_lift_2xweek/dd0ytti/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/Fitness/comments/5qozyx/advice_needed_only_able_to_lift_2xweek/",
+               "report_reasons":null,
+               "link_author":"utahmilkshake",
+               "subreddit":"Fitness",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/Fitness/comments/5qozyx/advice_needed_only_able_to_lift_2xweek/",
+               "created":1485659076.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/Fitness",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":-8
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_5qgyi4",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"dd0w7ym",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":231,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1485626713.0,
+               "send_replies":true,
+               "parent_id":"t1_dczv17c",
+               "score":2,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2qqjc",
+               "body":"A lot of larger shows travel with everything, including sometimes their own stages.  Definitely bring their own speakers, boards, and lighting.  ",
+               "link_title":"TIL that Armenian-American metal band System of a Down once held a free concert made for 3,500 people, but nearly triple the amount of people showed up. The concert was eventually cancelled by police due to the large crowd, which caused fans to start a riot and destroy $30,000 worth of equipment.",
+               "author_flair_css_class":null,
+               "name":"t1_dd0w7ym",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;A lot of larger shows travel with everything, including sometimes their own stages.  Definitely bring their own speakers, boards, and lighting.  &lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/todayilearned/comments/5qgyi4/til_that_armenianamerican_metal_band_system_of_a/dd0w7ym/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/todayilearned/comments/5qgyi4/til_that_armenianamerican_metal_band_system_of_a/",
+               "report_reasons":null,
+               "link_author":"Code_Rocker",
+               "subreddit":"todayilearned",
+               "author_flair_text":null,
+               "link_url":"http://www.nme.com/news/music/system-of-a-down-49-1382991",
+               "created":1485655513.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/todayilearned",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":2
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_5qgyi4",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"dczrlaw",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":false,
+               "author":"NeedsAVet",
+               "num_comments":231,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1485550843.0,
+               "send_replies":true,
+               "parent_id":"t1_dczetgm",
+               "score":39,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2qqjc",
+               "body":"That was my thought.  I set up concerts with IATSE.  The knobs on some of these sound boards cost more than 30k",
+               "link_title":"TIL that Armenian-American metal band System of a Down once held a free concert made for 3,500 people, but nearly triple the amount of people showed up. The concert was eventually cancelled by police due to the large crowd, which caused fans to start a riot and destroy $30,000 worth of equipment.",
+               "author_flair_css_class":null,
+               "name":"t1_dczrlaw",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;That was my thought.  I set up concerts with IATSE.  The knobs on some of these sound boards cost more than 30k&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/todayilearned/comments/5qgyi4/til_that_armenianamerican_metal_band_system_of_a/dczrlaw/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/todayilearned/comments/5qgyi4/til_that_armenianamerican_metal_band_system_of_a/",
+               "report_reasons":null,
+               "link_author":"Code_Rocker",
+               "subreddit":"todayilearned",
+               "author_flair_text":null,
+               "link_url":"http://www.nme.com/news/music/system-of-a-down-49-1382991",
+               "created":1485579643.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/todayilearned",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":39
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_5n7re1",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"dcaqe08",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":26,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1484161853.0,
+               "send_replies":true,
+               "parent_id":"t3_5n7re1",
+               "score":1,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2s7tt",
+               "body":"But /u/otp1144 it wasn't anywhere near noon\n\n'Not according to my car clock'",
+               "link_title":"Highlight of my week",
+               "author_flair_css_class":null,
+               "name":"t1_dcaqe08",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;But &lt;a href=\"/u/otp1144\"&gt;/u/otp1144&lt;/a&gt; it wasn&amp;#39;t anywhere near noon&lt;/p&gt;\n\n&lt;p&gt;&amp;#39;Not according to my car clock&amp;#39;&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/AdviceAnimals/comments/5n7re1/highlight_of_my_week/dcaqe08/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/AdviceAnimals/comments/5n7re1/highlight_of_my_week/",
+               "report_reasons":null,
+               "link_author":"otp1144",
+               "subreddit":"AdviceAnimals",
+               "author_flair_text":null,
+               "link_url":"http://imgur.com/UYTEOr9",
+               "created":1484190653.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/AdviceAnimals",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":1
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_5jl6q7",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"dbicq0d",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":72,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1482424408.0,
+               "send_replies":true,
+               "parent_id":"t1_dbgzd7v",
+               "score":4,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2rz8w",
+               "body":"I don't get it",
+               "link_title":"(Random) Do you guys constantly feel yourself now that you've been losing weight or is that just me?!",
+               "author_flair_css_class":null,
+               "name":"t1_dbicq0d",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;I don&amp;#39;t get it&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/loseit/comments/5jl6q7/random_do_you_guys_constantly_feel_yourself_now/dbicq0d/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/loseit/comments/5jl6q7/random_do_you_guys_constantly_feel_yourself_now/",
+               "report_reasons":null,
+               "link_author":"[deleted]",
+               "subreddit":"loseit",
+               "author_flair_text":null,
+               "link_url":"https://www.reddit.com/r/loseit/comments/5jl6q7/random_do_you_guys_constantly_feel_yourself_now/",
+               "created":1482453208.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/loseit",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":4
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_42s8yr",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"czcwrr8",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":false,
+               "author":"NeedsAVet",
+               "num_comments":18,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1453837845.0,
+               "send_replies":true,
+               "parent_id":"t3_42s8yr",
+               "score":6,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2s7tt",
+               "body":"You have obviously never looked at the cost of child care...",
+               "link_title":"Filing taxes as a single, male adult.",
+               "author_flair_css_class":null,
+               "name":"t1_czcwrr8",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;You have obviously never looked at the cost of child care...&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/AdviceAnimals/comments/42s8yr/filing_taxes_as_a_single_male_adult/czcwrr8/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/AdviceAnimals/comments/42s8yr/filing_taxes_as_a_single_male_adult/",
+               "report_reasons":null,
+               "link_author":"Jatogo7",
+               "subreddit":"AdviceAnimals",
+               "author_flair_text":null,
+               "link_url":"http://imgur.com/F8iZgzT",
+               "created":1453866645.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/AdviceAnimals",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":6
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_42s5qj",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"czcwg7n",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":false,
+               "author":"NeedsAVet",
+               "num_comments":98,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1453837414.0,
+               "send_replies":true,
+               "parent_id":"t3_42s5qj",
+               "score":24,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2s7tt",
+               "body":"I worked DSL support for years.  Here is the thing - Everyone thinks it is the ISPs fault.  Everyone says 'I didn't change anything, so it must be on your end' or 'there must be a problem with the hardware'.  I did dedicated business support towards the end and even sys admins would call and say it must be something on our end, then refuse to walk through other potential issues.  Sometimes it was something on our end, most of the time it was not.  Because of that there are usually flow sheets or standard check lists that you are required to check first.  You agree with the customer and think you should send a replacement, or a tech, too bad.  It is not going to be approved until you run through the check list.  We had legit problems with the modems we sent out.  I could usually recognize the issue within a couple of minutes.  Still had to walk through the check list.  Because if checking a couple of settings, or power cycling equipment can solve the problem, why not.  Saves the end user the wait, saves the company the money.  \n\nIf someone would call and legitimately know what they were talking about, and walk me through what they have already done to diagnose the problem, then I would be willing to bypass repeating those steps.  But even with those sys admins, you have no idea how many times swapping out a cable, or power cycling still fixed the issue...",
+               "link_title":"Not much in IT feels better than those few times you get the ISP to admit it's on their end",
+               "author_flair_css_class":null,
+               "name":"t1_czcwg7n",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;I worked DSL support for years.  Here is the thing - Everyone thinks it is the ISPs fault.  Everyone says &amp;#39;I didn&amp;#39;t change anything, so it must be on your end&amp;#39; or &amp;#39;there must be a problem with the hardware&amp;#39;.  I did dedicated business support towards the end and even sys admins would call and say it must be something on our end, then refuse to walk through other potential issues.  Sometimes it was something on our end, most of the time it was not.  Because of that there are usually flow sheets or standard check lists that you are required to check first.  You agree with the customer and think you should send a replacement, or a tech, too bad.  It is not going to be approved until you run through the check list.  We had legit problems with the modems we sent out.  I could usually recognize the issue within a couple of minutes.  Still had to walk through the check list.  Because if checking a couple of settings, or power cycling equipment can solve the problem, why not.  Saves the end user the wait, saves the company the money.  &lt;/p&gt;\n\n&lt;p&gt;If someone would call and legitimately know what they were talking about, and walk me through what they have already done to diagnose the problem, then I would be willing to bypass repeating those steps.  But even with those sys admins, you have no idea how many times swapping out a cable, or power cycling still fixed the issue...&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/AdviceAnimals/comments/42s5qj/not_much_in_it_feels_better_than_those_few_times/czcwg7n/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/AdviceAnimals/comments/42s5qj/not_much_in_it_feels_better_than_those_few_times/",
+               "report_reasons":null,
+               "link_author":"BigJ76",
+               "subreddit":"AdviceAnimals",
+               "author_flair_text":null,
+               "link_url":"http://imgur.com/fFuo0DE",
+               "created":1453866214.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/AdviceAnimals",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":24
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_42rjse",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"czcw09x",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":294,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1453836823.0,
+               "send_replies":true,
+               "parent_id":"t1_czcthno",
+               "score":4,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2s7tt",
+               "body":"Going the rom-com approach, wish me luck!.\n\nSeriously though, going through this with someone right now, and have had it happen in the past.  It is an excuse some people use, out of some sort of misguided attempt to 'let you down easy', but it is also a legit 'right now' sort of thing as well.  Currently spend a lot of time 'not dating' a girl that recently got out of an abusive relationship. She legitimately just does not feel ready to date again.\n\nI have been on both sides of this in the past.  Here is my advice.  Do you like them?  Would you legitimately want to be there friend? Or are you just trying to sleep with them?  Can you deal with just being their friend, and potentially watch them eventually date someone else?  If yes, when you tell them you like them and when they say they are only interested in being friends, tell them that you would want that AND here is the important part, tell them that if they ever change their mind, they have to let you know.  Then be their friend.  Don't read into shit, don't have expectations.  She wants a backrub, its a platonic backrub.  She gives you a kiss on your birthday, its a platonic kiss.  She flirts with you, she is just having some fun.  If she dates someone else, be happy for her, she is your friend.  \n\nWhy?  A couple of reasons.  I have had infatuations turn into long lasting friendships.  If you love them, chances are they will be a good friend.  But only if you can accept the friendship.  If you keep thinking it might just happen, eventually you are going to fuck it up.  Second, I have been in the friend zone and the not ready for a relationship zone in the past, and had both end up resulting in great relationships.  The best relationships are with people who are also your friend, not just your lover.  ",
+               "link_title":"This is a difficult thing for me to grasp",
+               "author_flair_css_class":null,
+               "name":"t1_czcw09x",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;Going the rom-com approach, wish me luck!.&lt;/p&gt;\n\n&lt;p&gt;Seriously though, going through this with someone right now, and have had it happen in the past.  It is an excuse some people use, out of some sort of misguided attempt to &amp;#39;let you down easy&amp;#39;, but it is also a legit &amp;#39;right now&amp;#39; sort of thing as well.  Currently spend a lot of time &amp;#39;not dating&amp;#39; a girl that recently got out of an abusive relationship. She legitimately just does not feel ready to date again.&lt;/p&gt;\n\n&lt;p&gt;I have been on both sides of this in the past.  Here is my advice.  Do you like them?  Would you legitimately want to be there friend? Or are you just trying to sleep with them?  Can you deal with just being their friend, and potentially watch them eventually date someone else?  If yes, when you tell them you like them and when they say they are only interested in being friends, tell them that you would want that AND here is the important part, tell them that if they ever change their mind, they have to let you know.  Then be their friend.  Don&amp;#39;t read into shit, don&amp;#39;t have expectations.  She wants a backrub, its a platonic backrub.  She gives you a kiss on your birthday, its a platonic kiss.  She flirts with you, she is just having some fun.  If she dates someone else, be happy for her, she is your friend.  &lt;/p&gt;\n\n&lt;p&gt;Why?  A couple of reasons.  I have had infatuations turn into long lasting friendships.  If you love them, chances are they will be a good friend.  But only if you can accept the friendship.  If you keep thinking it might just happen, eventually you are going to fuck it up.  Second, I have been in the friend zone and the not ready for a relationship zone in the past, and had both end up resulting in great relationships.  The best relationships are with people who are also your friend, not just your lover.  &lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/AdviceAnimals/comments/42rjse/this_is_a_difficult_thing_for_me_to_grasp/czcw09x/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/AdviceAnimals/comments/42rjse/this_is_a_difficult_thing_for_me_to_grasp/",
+               "report_reasons":null,
+               "link_author":"Tibia548",
+               "subreddit":"AdviceAnimals",
+               "author_flair_text":null,
+               "link_url":"http://imgur.com/oN3vP6H",
+               "created":1453865623.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/AdviceAnimals",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":4
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_40k692",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"cyv8rpv",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":5,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1452602770.0,
+               "send_replies":true,
+               "parent_id":"t3_40k692",
+               "score":1,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2s7tt",
+               "body":"You know, for all the crap you learn in k12 that you never use again, learning how to work in groups with sub-par members is actually fairly important.  Turns out in the real world you ARE going to have to do group projects, and you will inevitably, at least on occasion, have shitty co-workers. ",
+               "link_title":"I asked if I could work alone and this happened....",
+               "author_flair_css_class":null,
+               "name":"t1_cyv8rpv",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;You know, for all the crap you learn in k12 that you never use again, learning how to work in groups with sub-par members is actually fairly important.  Turns out in the real world you ARE going to have to do group projects, and you will inevitably, at least on occasion, have shitty co-workers. &lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/AdviceAnimals/comments/40k692/i_asked_if_i_could_work_alone_and_this_happened/cyv8rpv/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/AdviceAnimals/comments/40k692/i_asked_if_i_could_work_alone_and_this_happened/",
+               "report_reasons":null,
+               "link_author":"complexevil",
+               "subreddit":"AdviceAnimals",
+               "author_flair_text":null,
+               "link_url":"http://media.makeameme.org/created/explains-everthing-that.jpg",
+               "created":1452631570.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/AdviceAnimals",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":1
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_3ytd72",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"cygpftr",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":true,
+               "author":"NeedsAVet",
+               "num_comments":329,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1451518708.0,
+               "send_replies":true,
+               "parent_id":"t1_cyglk5h",
+               "score":169,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2qt55",
+               "body":"Since you didn't post it, [here] (https://www.youtube.com/watch?v=VHV1YbeznCo)",
+               "link_title":"Crush tests on various objects",
+               "author_flair_css_class":null,
+               "name":"t1_cygpftr",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;Since you didn&amp;#39;t post it, &lt;a href=\"https://www.youtube.com/watch?v=VHV1YbeznCo\"&gt;here&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/gifs/comments/3ytd72/crush_tests_on_various_objects/cygpftr/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/gifs/comments/3ytd72/crush_tests_on_various_objects/",
+               "report_reasons":null,
+               "link_author":"[deleted]",
+               "subreddit":"gifs",
+               "author_flair_text":null,
+               "link_url":"https://i.imgur.com/KLYlmD2.gifv",
+               "created":1451547508.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/gifs",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":169
+            }
+         },
+         {
+            "kind":"t1",
+            "data":{
+               "total_awards_received":0,
+               "approved_at_utc":null,
+               "comment_type":null,
+               "awarders":[
+
+               ],
+               "mod_reason_by":null,
+               "banned_by":null,
+               "author_flair_type":"text",
+               "removal_reason":null,
+               "link_id":"t3_3yn43z",
+               "author_flair_template_id":null,
+               "likes":null,
+               "replies":"",
+               "user_reports":[
+
+               ],
+               "saved":false,
+               "id":"cyf5swx",
+               "banned_at_utc":null,
+               "mod_reason_title":null,
+               "gilded":0,
+               "archived":true,
+               "no_follow":false,
+               "author":"NeedsAVet",
+               "num_comments":617,
+               "edited":false,
+               "can_mod_post":false,
+               "created_utc":1451412264.0,
+               "send_replies":true,
+               "parent_id":"t1_cyf03d5",
+               "score":4,
+               "author_fullname":"t2_qsj1p",
+               "over_18":false,
+               "treatment_tags":[
+
+               ],
+               "approved_by":null,
+               "mod_note":null,
+               "all_awardings":[
+
+               ],
+               "subreddit_id":"t5_2t7no",
+               "body":"Totally.  I live in Madison and we have a ton of trails like this, including from Madison down to the Illinois and Iowa borders, and a route from just east of Madison to Milwaukee.  All part of the rails to trails program",
+               "link_title":"Germany gives green light to bicycle highways",
+               "author_flair_css_class":null,
+               "name":"t1_cyf5swx",
+               "author_patreon_flair":false,
+               "downs":0,
+               "author_flair_richtext":[
+
+               ],
+               "is_submitter":false,
+               "body_html":"&lt;div class=\"md\"&gt;&lt;p&gt;Totally.  I live in Madison and we have a ton of trails like this, including from Madison down to the Illinois and Iowa borders, and a route from just east of Madison to Milwaukee.  All part of the rails to trails program&lt;/p&gt;\n&lt;/div&gt;",
+               "gildings":{
+
+               },
+               "collapsed_reason":null,
+               "distinguished":null,
+               "associated_award":null,
+               "stickied":false,
+               "author_premium":false,
+               "can_gild":true,
+               "top_awarded_type":null,
+               "author_flair_text_color":null,
+               "score_hidden":false,
+               "permalink":"/r/Futurology/comments/3yn43z/germany_gives_green_light_to_bicycle_highways/cyf5swx/",
+               "num_reports":null,
+               "link_permalink":"https://www.reddit.com/r/Futurology/comments/3yn43z/germany_gives_green_light_to_bicycle_highways/",
+               "report_reasons":null,
+               "link_author":"Bloomsey",
+               "subreddit":"Futurology",
+               "author_flair_text":null,
+               "link_url":"http://phys.org/news/2015-12-germany-green-bicycle-highways.html?",
+               "created":1451441064.0,
+               "collapsed":false,
+               "subreddit_name_prefixed":"r/Futurology",
+               "controversiality":0,
+               "locked":false,
+               "author_flair_background_color":null,
+               "collapsed_because_crowd_control":null,
+               "mod_reports":[
+
+               ],
+               "quarantine":false,
+               "subreddit_type":"public",
+               "ups":4
+            }
+         }
+      ],
+      "after":"t1_cyf5swx",
+      "before":null
+   }
+}
