@@ -9,10 +9,11 @@ import datetime as dt
 import difflib
 from textblob import TextBlob
 import os
+import csv
 
 # Same as clean_data_normies, but I want to clean it up so I can grow results on multiple input files
 # I also need to build recent comments either while running or prior to running the cleaning section
-outfile = 'lib/data/my_clean_data_live.csv'
+outfile = 'lib/data/my_clean_data_normies.csv'
 current_run = 0
 
 def diff_ratio(_a, _b):
@@ -129,7 +130,7 @@ def calc_stats(comment):
 def clean_comments(file):
             
     with open(file) as f:
-        my_data = pd.read_csv(f, sep=',', dtype={
+        my_data = pd.read_csv(f,  sep=',',  dtype={
             "banned_by": str,
             "no_follow": str,
             "link_id": str,
@@ -151,6 +152,7 @@ def clean_comments(file):
             "ups": np.float64,
         })
 
+    
     my_data['is_bot'] = 'false'
     my_data['is_troll'] = 'false'
     
