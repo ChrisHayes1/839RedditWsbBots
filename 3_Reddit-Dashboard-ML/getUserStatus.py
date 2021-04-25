@@ -21,12 +21,8 @@ with open(clean_data_path, 'rb') as f:
 class Botidentification():
     """Class for add end points."""
 
-    def get(self):
-        """HTTP GET /.
-        """
-        return {'Please send a POST request'}
 
-    def post(self, user_json):
+    def get_user_status(self, user_json):
         """HTTP POST /.
 
         Boot identification solution end point.
@@ -37,12 +33,13 @@ class Botidentification():
 
         """
         #application.logger.info("Received request")
-        
-        clean_data = model.clean_data(user_json)
+        #print(f"user jason = {user_json}")
+        #clean_data = model.clean_data(user_json)
         #application.logger.info("Cleaned data: " + str(clean_data))
         
-        prediction = model.predict(clean_data)
+        prediction = model.predict(user_json)
 
+        #print(prediction)
         # Return the prediction
         if prediction == 'normal':
             pred_text = 'normal user'
@@ -55,7 +52,7 @@ class Botidentification():
 
         output = {'prediction': pred_text}
         #application.logger.info(output)
-        return output
+        return prediction
 
 # Setup the Api resource routing here
 # Route the URL to the resource
