@@ -169,13 +169,13 @@ def clean_comments(file):
     # format columns
     my_data['created_utc'] = pd.to_datetime(my_data['created_utc'].values, unit='s')
     my_data['body'] = my_data['body'].str.slice(stop=200).fillna('')
-    my_data['is_bot'] = my_data['is_bot'].map({'t':True}).fillna(False)
-    my_data['is_troll'] = my_data['is_troll'].map({'t':True, 'f':False}).fillna(False)
-    my_data['is_troll'] = my_data['is_troll'].map({'t':True, 'f':False}).fillna(False)
-    my_data['over_18'] = my_data['over_18'].map({'t':True, 'f':False}).fillna(False)
-    my_data['is_submitter'] = my_data['is_submitter'].map({'t':True, 'f':False}).fillna(False)
-    my_data['author_verified'] = my_data['author_verified'].map({'t':True, 'f':False}).fillna(False)
-    my_data['no_follow'] = my_data['no_follow'].map({'t':True, 'f':False}).fillna(False)
+    my_data['is_bot'] = my_data['is_bot'].map({'true':True}).fillna(False)
+    my_data['is_troll'] = my_data['is_troll'].map({'true':True, 'false':False}).fillna(False)
+    my_data['is_troll'] = my_data['is_troll'].map({'true':True, 'false':False}).fillna(False)
+    my_data['over_18'] = my_data['over_18'].map({'true':True, 'false':False}).fillna(False)
+    my_data['is_submitter'] = my_data['is_submitter'].map({'true':True, 'false':False}).fillna(False)
+    my_data['author_verified'] = my_data['author_verified'].map({'true':True, 'false':False}).fillna(False)
+    my_data['no_follow'] = my_data['no_follow'].map({'true':True, 'false':False}).fillna(False)
 
 
 
