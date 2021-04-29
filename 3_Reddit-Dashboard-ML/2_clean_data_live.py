@@ -13,7 +13,7 @@ import csv
 
 # Same as clean_data_normies, but I want to clean it up so I can grow results on multiple input files
 # I also need to build recent comments either while running or prior to running the cleaning section
-outfile = 'lib/data/live_data/results/my_clean_data_live_r1g1s1_{}.csv'
+outfile = 'lib/data/live_data/raw/temp_clean/my_clean_data_live_r1g1s1_{}.csv'
 current_run = 0
 
 def diff_ratio(_a, _b):

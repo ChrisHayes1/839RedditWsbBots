@@ -8,7 +8,7 @@ from getUserStatus import Botidentification
 
 gs = Botidentification()
 df_response = pd.DataFrame()
-out_file = "./lib/data/live_data/results/result.csv"
+out_file = "./lib/data/live_data/raw/temp_results/result.csv"
 is_start = True
 
 print_point = 1000
@@ -25,7 +25,11 @@ def query_status(row):
     count += 1
     if (count % print_point == 0):
         print(f"Count = {count} on {row['author']}")
-    return gs.get_user_status(df_new)
+    
+    try:
+        return gs.get_user_status(df_new)
+    except ValueError:
+        return "error"
     
 # For each live file, iterate through and ID potential bots
 def get_status(file_name):
@@ -42,8 +46,8 @@ def get_status(file_name):
         'over_18': str,
         'body': str,
         'is_submitter': str,
-        'recent_num_comments': np.int64,
-        'recent_num_last_30_days' :np.int64,
+        'recent_num_comments': np.float64,
+        'recent_num_last_30_days' :np.float64,
         'recent_avg_no_follow': np.float64,
         'recent_avg_gilded': np.float64,
         'recent_avg_responses': np.float64,
