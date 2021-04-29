@@ -7,8 +7,8 @@ import datetime
 # to get JSON user comment data
 
 CORE_LINK = "https://www.reddit.com/user/{}/comments.json?limit=25"
-file_in = "../Data/Run01/6g1_authors_dedup.txt"
-file_out = "/mydata/node0/7g1_{}_author_comments_and_attr.csv"
+file_in = "../Data/Run01/6n0_authors_dedup.txt"
+file_out = "/mydata/node0/7n0_{}_author_comments_and_attr.csv"
 
 reddit = praw.Reddit('ClientSecrets')
 df_final = pd.DataFrame()

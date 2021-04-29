@@ -7,8 +7,8 @@ import datetime
 # to get JSON user comment data
 
 CORE_LINK = "https://www.reddit.com/user/{}/comments.json?limit=25"
-file_in = "../Data/Run00/6_authors_dedup.csv"
-file_out = "/mydata/node0/7g1_run00_{}_author_comments_and_attr.csv"
+file_in = "../Data/Run01/6n0_authors_dedup.txt"
+file_out = "/mydata/live_group1/7g1_run00_{}_author_comments_and_attr.csv"
 
 reddit = praw.Reddit('ClientSecrets')
 df_final = pd.DataFrame()
@@ -118,7 +118,7 @@ def get_author_detail(row):
     #files getting to large, going to split up
     if (global_count% file_max == 0):
         print(f"<- Starting new file {current_file} with gc = {global_count}->")
-        df_final.to_csv(file_out.format(current_file), mode='a', index=False)
+        df_final.to_csv(file_out.format(current_file), mode='a', index=False, header=False)
         df_final = pd.DataFrame()
         current_file += 1
     return row
