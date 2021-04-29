@@ -114,11 +114,11 @@ def get_author_detail(row):
         if (global_count == save_point):
             df_final.to_csv(file_out.format(current_file), index=False)
         else:
-            df_final.to_csv(file_out.format(current_file), mode='a', index=False)
+            df_final.to_csv(file_out.format(current_file), mode='a', index=False,  header=False)
     #files getting to large, going to split up
     if (global_count% file_max == 0):
         print(f"<- Starting new file {current_file} with gc = {global_count}->")
-        df_final.to_csv(file_out.format(current_file), mode='a', index=False)
+        df_final.to_csv(file_out.format(current_file), mode='a', index=False,  header=False)
         df_final = pd.DataFrame()
         current_file += 1
     return row
