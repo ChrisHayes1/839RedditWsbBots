@@ -1,0 +1,62 @@
+python3 ./3_user_identification.py
+Clean Dataset Shape for Training:  (19686, 25)
+Clean Dataset Shape for Normies:  (254423, 25)
+Clean Dataset Shape Combined:  (274109, 25)
+Start: 274109
+After drop_dups: 273959
+Length of bot_authors = 298
+Pre, normal count = 254423 and bot = 12985
+After, normal count = 254423 and bot = 12985
+After removing columns not considered:  (273959, 19)
+Counter({'normal': 254423, 'bot': 12985, 'troll': 6551})
+Len of input x = 273959
+Len of input y = 273959
+Predicted   bot  normal  troll    All
+True                                 
+bot        3736     144      1   3881
+normal      320   73385   2683  76388
+troll         0     453   1466   1919
+All        4056   73982   4150  82188
+Accuracy: 0.9561858178809559
+Mcc: 0.7392613241980369
+F1 : [0.94141363 0.97605905 0.48311089]
+Recall : [0.9626385  0.96068754 0.76393955]
+Precision: [0.92110454 0.99193047 0.35325301]
+author_verified                  0.582433
+author_comment_karma             0.210599
+author_link_karma                0.173015
+recent_avg_diff_ratio            0.018302
+recent_avg_responses             0.015652
+recent_avg_gilded                0.000000
+over_18                          0.000000
+is_submitter                     0.000000
+recent_avg_no_follow             0.000000
+recent_min_sentiment_polarity    0.000000
+recent_avg_sentiment_polarity    0.000000
+recent_percent_neg_score         0.000000
+recent_avg_score                 0.000000
+recent_min_score                 0.000000
+recent_avg_controversiality      0.000000
+recent_avg_ups                   0.000000
+recent_max_diff_ratio            0.000000
+no_follow                        0.000000
+dtype: float64
+Predicted   bot  normal  troll     All
+True                                  
+bot        8750     354      0    9104
+normal      783  171143   6109  178035
+troll         3    1053   3576    4632
+All        9536  172550   9685  191771
+Predicted   bot  normal  troll    All
+True                                 
+bot        3558     322      1   3881
+normal        0   75147   1241  76388
+troll         0    1084    835   1919
+All        3558   76553   2077  82188
+Accuracy: 0.9677811846011584
+Mcc: 0.755419017898536
+F1 : [0.95658019 0.98269267 0.41791792]
+Recall : [0.91677403 0.98375399 0.43512246]
+Precision: [1.         0.98163364 0.40202215]
+Pickled classifier at lib/models/DecisionTreeClassifier.pkl
+Pickled vectorizer at lib/models/CleanData.pkl
