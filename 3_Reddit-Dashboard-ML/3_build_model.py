@@ -48,8 +48,26 @@ count_bot = len(my_data.loc[(my_data.target == 'bot')])
 print(f'After, normal count = {count_normal} and bot = {count_bot}')
 
 # Delete irrelevant columns
-columns = ['link_id', 'author', 'created_utc', 'body', 'no_follow', 'over_18', 'is_submitter', 'recent_avg_no_follow']
-my_data.drop(columns, inplace=True, axis=1)
+out_columns = ['author_verified',
+        'author_comment_karma',
+        'author_link_karma',
+        'recent_num_comments',
+        'recent_num_last_30_days',
+        'recent_avg_responses',
+        'recent_percent_neg_score',
+        'recent_avg_score',
+        'recent_min_score',
+        'recent_avg_controversiality',
+        'recent_avg_ups',
+        'recent_avg_diff_ratio',
+        'recent_max_diff_ratio',
+        'recent_avg_sentiment_polarity',
+        'recent_min_sentiment_polarity',
+        'target']
+
+#columns = ['link_id', 'author', 'created_utc', 'body', 'no_follow', 'over_18', 'is_submitter', 'recent_avg_no_follow']
+#my_data.drop(columns, inplace=True, axis=1)
+my_data = my_data[out_columns]
 print("After removing columns not considered: ", my_data.shape)
 
 my_data[my_data['target']=='normal'].describe()
@@ -94,7 +112,7 @@ f.close()
 
 #y_train.to_csv("lib/data/Y_train.csv")
 # Create a Decision Tree Classifier
-clf = DecisionTreeClassifier(max_depth=3,
+clf = DecisionTreeClassifier(max_depth=4,
                              class_weight={'normal':1, 'bot':2.5, 'troll':5},
                              min_samples_leaf=100)
 

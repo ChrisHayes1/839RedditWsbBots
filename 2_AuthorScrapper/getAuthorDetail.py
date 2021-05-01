@@ -8,8 +8,8 @@ import pprint
 # to get JSON user comment data
 
 #CORE_LINK = "https://www.reddit.com/user/{}/comments.json?limit=25"
-file_in = "../Data/TrainingData/NormieData/AuthorSource/6_authors_dedup_med.txt"
-file_out = "../Data/TrainingData/NormieData/raw/7g1_run00_{}_AuthorCommentDet_ReadyForCleaning_med.csv"
+file_in = "../Data/TrainingData/NormieData/AuthorSource/6_authors_dedup_new.csv"
+file_out = "../Data/TrainingData/NormieData/raw/7g1_run00_{}_AuthorCommentDet_ReadyForCleaning_new.csv"
 
 reddit = praw.Reddit('ClientSecrets')
 df_final = pd.DataFrame()

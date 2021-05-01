@@ -11,14 +11,14 @@ from textblob import TextBlob
 import os
 import csv
 
-RUNNING_TROLLS = True
+RUNNING_TROLLS = False
 
 
 # Same as clean_data_normies, but I want to clean it up so I can grow results on multiple input files
 # I also need to build recent comments either while running or prior to running the cleaning section
 #outfile = 'lib/data/live_data/raw/temp_clean/my_clean_data_live_r1g1s1_{}.csv'
-outfile = '../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining_{}.csv'
-#outfile = '../Data/TrainingData/NormieData/cleaned/NormieData_ReadyForTraining_{}_small.csv'
+#outfile = '../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining_{}.csv'
+outfile = '../Data/TrainingData/NormieData/cleaned/NormieData_ReadyForTraining_{}_new.csv'
 #outfile = '../Data/Run01/test_run/2_cleaned/LiveData_{}_CleanedForQuery.csv'
 current_run = 0
 
@@ -309,8 +309,8 @@ def main():
         print("Usage: clean_data_live <folder>")
         #clean_comments("../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorCommentDet_ReadyForCleaning.csv")
         #clean_comments("../Data/Run01/test_run/1_raw/preped/raw_set_2_preped_short_subset7.csv")
-        clean_comments("../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorCommentDet_ReadyForCleaning.csv")
-        #clean_comments("../Data/TrainingData/NormieData/raw/7g1_run00_1_AuthorCommentDet_ReadyForCleaning_small.csv")
+        #clean_comments("../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorCommentDet_ReadyForCleaning.csv")
+        clean_comments("../Data/TrainingData/NormieData/raw/7g1_run00_1_AuthorCommentDet_ReadyForCleaning_new.csv")
 
     
 
