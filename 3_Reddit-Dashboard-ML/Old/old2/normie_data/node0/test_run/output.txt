@@ -1,0 +1,407 @@
+Starting at 00:33:53
+Running ./lib/data/normie_data/node0/test_run/7g1_run00_5_authorcomments_and_attr.csv
+0     The ends are labeled “display” and “source” so...
+1     The cable supports ARC. [link](https://www.ama...
+2     They did open too early, we were right to judg...
+3     How do you calculate % test positives? Cumulat...
+4     Not really cynicism, more like pragmatism. Wal...
+                            ...                        
+70                            Totally ruined ski season
+71                                                  She
+72                                                  She
+73                                                  She
+74    I've corrected so many people who've seen the ...
+Name: body, Length: 75, dtype: object
+Duplicates:  0
+Number of bot comments:  0
+Number of troll comments: 0
+Number of normal comments: 75
+Number of bot authors:  0
+Number of troll authors: 0
+Number of total authors:  3
+
+1 - Author diffractionltd has 1 comments
+
+...current comment = The ends are labeled “display” and “source” so I plugged them in accordingly. I also tried reversing the cable while troubleshooting.
+
+2 - Author diffractionltd has 2 comments
+
+...current comment = The cable supports ARC. [link](https://www.amazon.com/dp/B07YBLKQ7G?ref=ppx_pop_mob_ap_share)
+parsing recent comments - # recent comments = 1
+
+3 - Author diffractionltd has 3 comments
+
+...current comment = They did open too early, we were right to judge. Now we’re all dealing with the consequences. It’s not coincidence that countries lacking a national strategy get hit the hardest.
+parsing recent comments - # recent comments = 2
+
+4 - Author diffractionltd has 4 comments
+
+...current comment = How do you calculate % test positives? Cumulative? Rolling average?
+parsing recent comments - # recent comments = 3
+
+5 - Author diffractionltd has 5 comments
+
+...current comment = Not really cynicism, more like pragmatism. Walz won’t waste his political capital mandating something if no one will listen. Things are too heated right now, he wants people to follow his orders not t
+parsing recent comments - # recent comments = 4
+
+6 - Author diffractionltd has 6 comments
+
+...current comment = Clean out the charger connector socket on your phone with a toothpick or anything nonmetal. Sounds like it might be packed with dirt or lint.
+parsing recent comments - # recent comments = 5
+
+7 - Author diffractionltd has 7 comments
+
+...current comment = Assuming your PC isn’t a Mac, seems like you would need to download the iCloud app to your PC, and maybe set it to locally store full resolution photos of all your photos (not the “optimize storage” s
+parsing recent comments - # recent comments = 6
+
+8 - Author diffractionltd has 8 comments
+
+...current comment = [Link](https://www.intechopen.com/books/emerging-waveguide-technology/review-on-optical-waveguides). See Eq 9
+parsing recent comments - # recent comments = 7
+
+9 - Author diffractionltd has 9 comments
+
+...current comment = Billboards should be banned inside the cities.
+parsing recent comments - # recent comments = 8
+
+10 - Author diffractionltd has 10 comments
+
+...current comment = Yeah that’s exactly what I’d like to avoid... years’ of old spam text messages getting transferred from my Mac to my phone.
+parsing recent comments - # recent comments = 9
+
+11 - Author diffractionltd has 11 comments
+
+...current comment = Flashback to snowstorm last year on 35W, when crazy guy with a permit/carry got nudged by a school bus and felt a lethal response was warranted. 
+
+[https://www.startribune.com/man-charged-with-shootin
+parsing recent comments - # recent comments = 10
+
+12 - Author diffractionltd has 12 comments
+
+...current comment = only the penitent man will pass
+parsing recent comments - # recent comments = 11
+
+13 - Author diffractionltd has 13 comments
+
+...current comment = Lake & Nicollet, look for the giant "K"
+parsing recent comments - # recent comments = 12
+
+14 - Author diffractionltd has 14 comments
+
+...current comment = His website is still online, browse through his blog to get a feel for the brilliance the world lost when he died. [Link](http://www.aaronsw.com/weblog/archive)
+parsing recent comments - # recent comments = 13
+
+15 - Author diffractionltd has 15 comments
+
+...current comment = That's one reason (of many) that I had to put down his other book, Atemis, half way through it.
+parsing recent comments - # recent comments = 14
+
+16 - Author diffractionltd has 16 comments
+
+...current comment = Yes and no. See [this thread](https://www.reddit.com/r/piano/comments/7porbg/practicing_for_the_absolute_beginner_where_and/). Here's an excerpt:
+
+>Having a stretch-piece is okay. Be wary that you don
+parsing recent comments - # recent comments = 15
+
+17 - Author diffractionltd has 17 comments
+
+...current comment = In addition to the other comments here, the [Delayed-choice quantum eraser experiment](https://en.wikipedia.org/wiki/Delayed-choice_quantum_eraser) proves out this idea that a wavefunction can evolve 
+parsing recent comments - # recent comments = 16
+
+18 - Author diffractionltd has 18 comments
+
+...current comment = After getting an IP we kept our old slow cooker because we have space for both. We didn't keep it for any particular culinary reasons but mostly for days when we want something to eat right when we ge
+parsing recent comments - # recent comments = 17
+
+19 - Author diffractionltd has 19 comments
+
+...current comment = You're right, and maybe you're already aware, but my understanding is that the suspensions weren't for anything truly nefarious... they were simply posting links to songs which ran afoul of Twitter's 
+parsing recent comments - # recent comments = 18
+
+20 - Author diffractionltd has 20 comments
+
+...current comment = He has gotten himself into some deep, nasty Twitter fights over the years, bad enough where others had to intervene and you would be surprised if management *didn't* officially gave him a warning. Bad
+parsing recent comments - # recent comments = 19
+
+21 - Author diffractionltd has 21 comments
+
+...current comment = How did you choose the color palette?
+parsing recent comments - # recent comments = 20
+
+22 - Author diffractionltd has 22 comments
+
+...current comment = Thanks! I re-read a few parts, and your explanation makes sense.
+
+Regarding your question #1: Agreed, the basics of the story are probably truthful, but the interpretation is probably suspect and othe
+parsing recent comments - # recent comments = 21
+
+23 - Author diffractionltd has 23 comments
+
+...current comment = Just finished the book. I've got a question: Why was Tracker hell-bent on killing the Leopard (up until the point that Aesi buries him)? Prior to that, Leopard and Tracker were happy to see each other
+parsing recent comments - # recent comments = 22
+
+24 - Author diffractionltd has 24 comments
+
+...current comment = In addition to everything others said here, *you have to like grad school*. I tell that to everyone. If you are dreading grad school then absolutely don't go for a PhD.  
+
+In general my having a PhD r
+parsing recent comments - # recent comments = 23
+
+25 - Author diffractionltd has 25 comments
+
+...current comment = If I have my directions figured out, that's I-394 sitting there under a steaming hot volcano and honestly I don't think there will be any complaints. Plan approved, get to work.
+parsing recent comments - # recent comments = 24
+
+26 - Author MFcolinLB has 1 comments
+
+...current comment = you have to drop your shield from the menu if you want to downgrade to a lower tier shield so that people who don't want to swap but instead heal don't accidentally swap or something. I feel your pain
+
+27 - Author MFcolinLB has 2 comments
+
+...current comment = seriously weird stuff, this happened to me to and then I dropped in and there were insane rainbow textures everwhere that looked like tv static. Gamebreaker unfortunately, every piece of loot and my t
+parsing recent comments - # recent comments = 1
+
+28 - Author MFcolinLB has 3 comments
+
+...current comment = This is sick. I don't really know any japanese but I heard him say sp 404 and I think he said Jun Seba (like seba jun, nujabes reference maybe?)
+parsing recent comments - # recent comments = 2
+
+29 - Author MFcolinLB has 4 comments
+
+...current comment = YO this is fire! good job, good mix, I kinda thought the vinyl noise was a bit loud at the beginning but once the whole mix comes in its perfect. Did you sing the vocal samples yourself? they are real
+parsing recent comments - # recent comments = 3
+
+30 - Author MFcolinLB has 5 comments
+
+...current comment = 13+ murders, over 50 cases of rape, several burgleries. He was a navy seal and police officer during the time period that he was committing these crimes.
+parsing recent comments - # recent comments = 4
+
+31 - Author MFcolinLB has 6 comments
+
+...current comment = I found the gravitation potion, the baloon, the horseshoe, then the umbrella, then the cloud in a bottle. It was weird but now I'm set up to take on the WOF
+parsing recent comments - # recent comments = 5
+
+32 - Author MFcolinLB has 7 comments
+
+...current comment = I went to see a movie by myself and it was awesome. The movie itself was... just okay. But being alone and sitting away from people was really nice. My GF also CONSTANTLY asks me questions when we wat
+parsing recent comments - # recent comments = 6
+
+33 - Author MFcolinLB has 8 comments
+
+...current comment = Ba Z I nGA !
+parsing recent comments - # recent comments = 7
+
+34 - Author MFcolinLB has 9 comments
+
+...current comment = Consider the Lobster RATTLED me when I was younger. They are pretty smart little creatures with complex biologies. I know people from maine that dont kill them by boiling them.
+parsing recent comments - # recent comments = 8
+
+35 - Author MFcolinLB has 10 comments
+
+...current comment = Bought terrsria 3 weeks ago, I've played about 70 hours so far. You're right though, that would be totally weird if you could make stuff that moved like that.
+parsing recent comments - # recent comments = 9
+
+36 - Author MFcolinLB has 11 comments
+
+...current comment = Is that a paintball gun?
+parsing recent comments - # recent comments = 10
+
+37 - Author MFcolinLB has 12 comments
+
+...current comment = [Obligatory I work for a moving company]
+
+Please do this if you are able to. If you are not able actually able to, will likely help and try to accomodate you still. 
+
+Please be honest and descriptive 
+parsing recent comments - # recent comments = 11
+
+38 - Author MFcolinLB has 13 comments
+
+...current comment = If I remember correctly they basically want to use the processors they invented for ipads and iphones instead of intel processors. This will make macs really fast but inconpatable worh a lot of stuff.
+parsing recent comments - # recent comments = 12
+
+39 - Author MFcolinLB has 14 comments
+
+...current comment = Hell yes, I just started playing for the first time and I am really hoping that I can do a Howles moving castle type thing with my base when I get in to hard mode and master mode!
+parsing recent comments - # recent comments = 13
+
+40 - Author MFcolinLB has 15 comments
+
+...current comment = Is this without mods? Also, does it actually move?
+parsing recent comments - # recent comments = 14
+
+41 - Author MFcolinLB has 16 comments
+
+...current comment = If you want to take your kids to the circus... dont. If you want to go the circus yourself after seeing this... you need help.
+parsing recent comments - # recent comments = 15
+
+42 - Author MFcolinLB has 17 comments
+
+...current comment = I made a pedal board and didnt think to add a coupler 1/4 inch jack or a power outlet to the exterior and let me tell you- I know what I'm doing this weekend!
+parsing recent comments - # recent comments = 16
+
+43 - Author MFcolinLB has 18 comments
+
+...current comment = Yeah, theyre all dying and reproducing less because of endocrine disruptors and a hose of other things
+parsing recent comments - # recent comments = 17
+
+44 - Author MFcolinLB has 19 comments
+
+...current comment = According to a video I watched, she had several kids with both pairs of legs [apparently she had two vaginas?]
+parsing recent comments - # recent comments = 18
+
+45 - Author MFcolinLB has 20 comments
+
+...current comment = Ooookayyyy but why are those dudes UPSIDE DOWN
+parsing recent comments - # recent comments = 19
+
+46 - Author MFcolinLB has 21 comments
+
+...current comment = The only (admittedly anecdotal) experience I have with someone becoming addicted to psychedelics is when my best friend took acid almost every day for a few weeks and then tried to kill himself. Maybe
+parsing recent comments - # recent comments = 20
+
+47 - Author MFcolinLB has 22 comments
+
+...current comment = I was at a slightly stupid concert and a guy jumped on stage to stage dive and he jumped off the stage, he was kind of a big guy, and he crushed a small woman. She was hospitalized and the lead singer
+parsing recent comments - # recent comments = 21
+
+48 - Author MFcolinLB has 23 comments
+
+...current comment = 10/10 would think you are a pretty lady and probably ask u out awkwardly
+parsing recent comments - # recent comments = 22
+
+49 - Author MFcolinLB has 24 comments
+
+...current comment = Nice! Careful though, even though psilocybin may not be inherently addicting, no one is above becoming addicted to the experience. Stay on your toes and congratulations on taking steps to climb above 
+parsing recent comments - # recent comments = 23
+
+50 - Author MFcolinLB has 25 comments
+
+...current comment = Came here to say this. What does reimagine even mean in this context? Controlling their budgets and changing legislation is just defunding and demilitarizing.
+parsing recent comments - # recent comments = 24
+
+51 - Author selophane43 has 1 comments
+
+...current comment = I believe I read somewhere that the Brits think we are like teenage boys, still young but think we know it all and have it all figured out.
+
+52 - Author selophane43 has 2 comments
+
+...current comment = Wax moth can be destructive to bee hives. Every summer I inspect my hives for larvae crawling through the comb and ruining the honey stores as well as leaving tunnels.
+parsing recent comments - # recent comments = 1
+
+53 - Author selophane43 has 3 comments
+
+...current comment = I like watching Paul Hedderman on YouTube.
+parsing recent comments - # recent comments = 2
+
+54 - Author selophane43 has 4 comments
+
+...current comment = Trumpers should follow his advice. Very closely.
+parsing recent comments - # recent comments = 3
+
+55 - Author selophane43 has 5 comments
+
+...current comment = Whoah, Doc. That's heavy.
+parsing recent comments - # recent comments = 4
+
+56 - Author selophane43 has 6 comments
+
+...current comment = I wanna make this a tshirt, bumper sticker, and flag.
+parsing recent comments - # recent comments = 5
+
+57 - Author selophane43 has 7 comments
+
+...current comment = Welcome to my OCD monitoring myself hell.
+parsing recent comments - # recent comments = 6
+
+58 - Author selophane43 has 8 comments
+
+...current comment = Lang kisster. I went to Millersville.
+parsing recent comments - # recent comments = 7
+
+59 - Author selophane43 has 9 comments
+
+...current comment = SCRAPPLE 🤘
+parsing recent comments - # recent comments = 8
+
+60 - Author selophane43 has 10 comments
+
+...current comment = Are these real Sanders supporters or Russians trolls saying this to influence real Sanders supporters to follow suit? The internets.
+parsing recent comments - # recent comments = 9
+
+61 - Author selophane43 has 11 comments
+
+...current comment = Gorgeous. We just setup our second tumbler last night. Looks like same model. Have you had any critters taking bites??
+parsing recent comments - # recent comments = 10
+
+62 - Author selophane43 has 12 comments
+
+...current comment = Every spring I setup swarm traps in hoping to catch free bees. A package of bees can cost $150. A 5 frame nuc can cost $180.
+parsing recent comments - # recent comments = 11
+
+63 - Author selophane43 has 13 comments
+
+...current comment = Facebook is dangerous. Fixed that for you. Or you can abbreviate that to ftfy. It's what all the cool kids are doing on the Reddits these days.
+parsing recent comments - # recent comments = 12
+
+64 - Author selophane43 has 14 comments
+
+...current comment = Is there not proof that aromatherapy changes the chemistry in the brain at least temporarily?
+parsing recent comments - # recent comments = 13
+
+65 - Author selophane43 has 15 comments
+
+...current comment = Not in MY bake shop.
+parsing recent comments - # recent comments = 14
+
+66 - Author selophane43 has 16 comments
+
+...current comment = Damnit. I'm in PA and I gotta get 3 chickens tomorrow in NJ.
+parsing recent comments - # recent comments = 15
+
+67 - Author selophane43 has 17 comments
+
+...current comment = Are you critical in any other areas of life??
+parsing recent comments - # recent comments = 16
+
+68 - Author selophane43 has 18 comments
+
+...current comment = Try breathing through your mouth. Maybe your tastebuds can substitute.
+parsing recent comments - # recent comments = 17
+
+69 - Author selophane43 has 19 comments
+
+...current comment = Because we are not a democracy, we are a oligarchy. If we could really make a difference they wouldn't let us vote.
+parsing recent comments - # recent comments = 18
+
+70 - Author selophane43 has 20 comments
+
+...current comment = Hallelujah
+parsing recent comments - # recent comments = 19
+
+71 - Author selophane43 has 21 comments
+
+...current comment = Totally ruined ski season
+parsing recent comments - # recent comments = 20
+
+72 - Author selophane43 has 22 comments
+
+...current comment = She
+parsing recent comments - # recent comments = 21
+
+73 - Author selophane43 has 23 comments
+
+...current comment = She
+parsing recent comments - # recent comments = 22
+
+74 - Author selophane43 has 24 comments
+
+...current comment = She
+parsing recent comments - # recent comments = 23
+
+75 - Author selophane43 has 25 comments
+
+...current comment = I've corrected so many people who've seen the damn Bee movie. I keep  bees. Drones don't forage.
+parsing recent comments - # recent comments = 24
+The data cleaning finished correctly!!!
+Started at 00:33:53 ended at 00:33:56
