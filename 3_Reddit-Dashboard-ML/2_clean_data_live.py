@@ -11,9 +11,15 @@ from textblob import TextBlob
 import os
 import csv
 
+RUNNING_TROLLS = True
+
+
 # Same as clean_data_normies, but I want to clean it up so I can grow results on multiple input files
 # I also need to build recent comments either while running or prior to running the cleaning section
-outfile = 'lib/data/live_data/raw/temp_clean/my_clean_data_live_r1g1s1_{}.csv'
+#outfile = 'lib/data/live_data/raw/temp_clean/my_clean_data_live_r1g1s1_{}.csv'
+outfile = '../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining_{}.csv'
+#outfile = '../Data/TrainingData/NormieData/cleaned/NormieData_ReadyForTraining_{}_small.csv'
+#outfile = '../Data/Run01/test_run/2_cleaned/LiveData_{}_CleanedForQuery.csv'
 current_run = 0
 
 def diff_ratio(_a, _b):
@@ -81,10 +87,7 @@ def calc_stats(comment):
 
 
     recent_comments = pd.read_json(author_comments, dtype={
-        "banned_by": str,
-        "no_follow": bool,
         "link_id": str,
-        "gilded": np.float64,
         "author": str,
         "author_verified": bool,
         "author_comment_karma": np.float64,
@@ -92,13 +95,10 @@ def calc_stats(comment):
         "num_comments": np.float64,
         "created_utc": np.datetime64,
         "score": np.float64,
-        "over_18": bool,
         "body": str,
         "downs": np.float64,
-        "is_submitter": bool,
         "num_reports": np.float64,
         "controversiality": np.float64,
-        "quarantine": bool,
         "ups": np.float64})
     
     #print(f"{comment['author']} has {len(recent_comments)}")
@@ -108,8 +108,6 @@ def calc_stats(comment):
         comment['recent_num_comments'] = len(recent_comments)
         comment['recent_num_last_30_days'] = recent_comments['created_utc'].apply(
             lambda x: last_30(comment['created_utc'], x)).sum()
-        comment['recent_avg_no_follow'] = recent_comments['no_follow'].mean()
-        comment['recent_avg_gilded'] = recent_comments['gilded'].mean()
         comment['recent_avg_responses'] = recent_comments['num_comments'].mean()
         comment['recent_percent_neg_score'] = recent_comments['score'].apply(lambda x: x < 0).mean() * 100
         comment['recent_avg_score'] = recent_comments['score'].mean()
@@ -126,64 +124,89 @@ def calc_stats(comment):
 
     return comment
 
+def setTarget(x):
+    if(x.is_bot):
+        return 'bot'
+    elif(x.is_troll):
+        return 'troll'
+    else:
+        return 'normal'
 
+        
 def clean_comments(file):
             
     with open(file) as f:
-        my_data = pd.read_csv(f,  sep=',',  dtype={
-            "banned_by": str,
-            "no_follow": str,
-            "link_id": str,
-            "gilded": str,
-            "author": str,
-            "author_verified": str,
-            "author_comment_karma": np.float64,
-            "author_link_karma": np.float64,
-            "num_comments": np.float64,
-            "created_utc": np.float64,
-            "score": np.float64,
-            "over_18": str,
-            "body": str,
-            "downs": np.float64,
-            "is_submitter": str,
-            "num_reports": np.float64,
-            "controversiality": np.float64,
-            "quarantine": str,
-            "ups": np.float64,
-        })
+        if (RUNNING_TROLLS):
+            my_data = pd.read_csv(f,  sep=',',  dtype={
+                "banned_by": str,
+                "no_follow": bool,
+                "link_id": str,
+                "gilded": bool,
+                "author": str,
+                "author_verified": bool,
+                "author_comment_karma": np.float64,
+                "author_link_karma": np.float64,
+                "num_comments": np.float64,
+                "created_utc": np.float64,
+                "score": np.float64,
+                "over_18": bool,
+                "body": str,
+                "downs": np.float64,
+                "is_submitter": bool,
+                "num_reports": np.float64,
+                "controversiality": np.float64,
+                "quarantine": str,
+                "ups": np.float64,
+                "is_bot": bool,
+                "is_troll": bool
+            })
+        else: 
+            my_data = pd.read_csv(f,  sep=',',  dtype={
+                "link_id": str,
+                "author": str,
+                "author_verified": str,
+                "author_comment_karma": np.float64,
+                "author_link_karma": np.float64,
+                "num_comments": np.float64,
+                "created_utc": np.float64,
+                "score": np.float64,
+                "body": str,
+                "downs": np.float64,
+                "num_reports": np.float64,
+                "controversiality": np.float64,
+                "ups": np.float64,
+            })
+            my_data['is_bot'] = 'false'
+            my_data['is_troll'] = 'false'
 
     
-    my_data['is_bot'] = 'false'
-    my_data['is_troll'] = 'false'
     
-    #print(my_data['body'])
+    
 
     # drop duplicates
     dupes = len(my_data)
-    my_data = my_data.drop_duplicates(subset=['author','link_id','created_utc'])
+    my_data = my_data.drop_duplicates(subset=['author', 'link_id','created_utc'])
     print("Duplicates: ", dupes - len(my_data))
+
+    my_data = my_data.sort_values(by=['author','body', 'link_id','created_utc'])
+    print(my_data)
 
     # remove escape characters to make parsing easier
     my_data['body'] = my_data['body'].str.replace('\\','')
 
     # format columns
     my_data['created_utc'] = pd.to_datetime(my_data['created_utc'].values, unit='s')
-    my_data['body'] = my_data['body'].str.slice(stop=200).fillna('')
-    my_data['is_bot'] = my_data['is_bot'].map({'true':True}).fillna(False)
-    my_data['is_troll'] = my_data['is_troll'].map({'true':True, 'false':False}).fillna(False)
-    my_data['is_troll'] = my_data['is_troll'].map({'true':True, 'false':False}).fillna(False)
-    my_data['over_18'] = my_data['over_18'].map({'true':True, 'false':False}).fillna(False)
-    my_data['is_submitter'] = my_data['is_submitter'].map({'true':True, 'false':False}).fillna(False)
+    my_data['body'] = my_data['body'].str.slice(stop=200).fillna('')    
     my_data['author_verified'] = my_data['author_verified'].map({'true':True, 'false':False}).fillna(False)
-    my_data['no_follow'] = my_data['no_follow'].map({'true':True, 'false':False}).fillna(False)
+    if (not RUNNING_TROLLS):
+        my_data['is_bot'] = my_data['is_bot'].map({'true':True}).fillna(False)    
+        my_data['is_troll'] = my_data['is_troll'].map({'true':True, 'false':False}).fillna(False)
 
 
 
     # add our new stats columns
     my_data['recent_num_comments'] = pd.Series(np.zeros(len(my_data.index), np.int64))
     my_data['recent_num_last_30_days'] = pd.Series(np.zeros(len(my_data.index), np.int64))
-    my_data['recent_avg_no_follow'] = pd.Series(np.zeros(len(my_data.index), np.float64))
-    my_data['recent_avg_gilded'] = pd.Series(np.zeros(len(my_data.index), np.float64))
     my_data['recent_avg_responses'] = pd.Series(np.zeros(len(my_data.index), np.float64))
     my_data['recent_percent_neg_score'] = pd.Series(np.zeros(len(my_data.index), np.float64))
     my_data['recent_avg_score'] = pd.Series(np.zeros(len(my_data.index), np.float64))
@@ -195,6 +218,14 @@ def clean_comments(file):
     my_data['recent_avg_sentiment_polarity'] = pd.Series(np.zeros(len(my_data.index), np.float64))
     my_data['recent_min_sentiment_polarity'] = pd.Series(np.zeros(len(my_data.index), np.float64))
 
+    print("Starting .apply")
+
+    ################
+    #Build stats
+    ################
+    new_data = my_data.apply(calc_stats, axis=1)
+    ################
+    
     # Count num of bots and trolls
     bots = my_data['is_bot']
     trolls = my_data['is_troll']
@@ -212,12 +243,10 @@ def clean_comments(file):
     users = my_data['author'].values
     num_of_users = np.unique(users)
     print("Number of total authors: ", len(num_of_users))
+    
 
-
-    #Build stats
-    new_data = my_data.apply(calc_stats, axis=1)
-
-    new_data['target'] = 'normal'
+    # Create one column with the target training label
+    new_data['target'] = new_data.apply(lambda x: setTarget(x), axis=1)
 
     # Delete is_bot and is_troll collumns and add targets column
     columns = ['is_bot', 'is_troll']
@@ -226,20 +255,15 @@ def clean_comments(file):
     # Delete recent_comments to save space
     columns = ['recent_comments']
     new_data.drop(columns, inplace=True, axis=1)
-    out_columns = ['no_follow',
-        'link_id',
+    out_columns = ['link_id',
         'author',
         'author_verified',
         'author_comment_karma',
         'author_link_karma',
         'created_utc',
-        'over_18',
         'body',
-        'is_submitter',
         'recent_num_comments',
         'recent_num_last_30_days',
-        'recent_avg_no_follow',
-        'recent_avg_gilded',
         'recent_avg_responses',
         'recent_percent_neg_score',
         'recent_avg_score',
@@ -271,20 +295,24 @@ def main():
 
     if len(sys.argv) == 2:
         directory = sys.argv[1]
+        # itterate through folder
+        for filename in os.listdir(directory):        
+            if filename.endswith(".csv"):             
+                file = os.path.join(directory, filename)
+                print(f"Running {file}")
+                clean_comments(file)
+                current_run += 1
+                continue
+            else:
+                continue
     else:
         print("Usage: clean_data_live <folder>")
-        return
+        #clean_comments("../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorCommentDet_ReadyForCleaning.csv")
+        #clean_comments("../Data/Run01/test_run/1_raw/preped/raw_set_2_preped_short_subset7.csv")
+        clean_comments("../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorCommentDet_ReadyForCleaning.csv")
+        #clean_comments("../Data/TrainingData/NormieData/raw/7g1_run00_1_AuthorCommentDet_ReadyForCleaning_small.csv")
 
-    # itterate through folder
-    for filename in os.listdir(directory):        
-        if filename.endswith(".csv"):             
-            file = os.path.join(directory, filename)
-            print(f"Running {file}")
-            clean_comments(file)
-            current_run += 1
-            continue
-        else:
-            continue
+    
 
 
     #df = pd.read_csv(file_in, index_col=False)

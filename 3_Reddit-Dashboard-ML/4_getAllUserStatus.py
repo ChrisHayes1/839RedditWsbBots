@@ -5,10 +5,12 @@ import sys
 import datetime as dt
 import time
 from getUserStatus import Botidentification
+import pickle
+from model import RFModel
 
 gs = Botidentification()
 df_response = pd.DataFrame()
-out_file = "./lib/data/live_data/raw/temp_results/result.csv"
+out_file = "../Data/Run01/test_run/3_results/result.csv"
 is_start = True
 
 print_point = 1000
@@ -26,14 +28,32 @@ def query_status(row):
     if (count % print_point == 0):
         print(f"Count = {count} on {row['author']}")
     
-    try:
-        return gs.get_user_status(df_new)
-    except ValueError:
-        return "error"
+    #try:
+    row['status'] =  gs.get_user_status(df_new.values.tolist())
+    print(row[['author', 'status', 'recent_avg_diff_ratio', 'author_verified', 'author_comment_karma', 'author_comment_karma' , 'author_link_karma', 'recent_avg_score', 'recent_max_diff_ratio', 'recent_avg_ups']])
+    return row
+    #except ValueError:
+    #    return "error"
     
+def get_results(df):
+    df_new = df.drop(columns='author')
+    model = RFModel()
+
+    clf_path = 'lib/models/DecisionTreeClassifier.pkl'
+    with open(clf_path, 'rb') as f:
+        model.clf = pickle.load(f)
+
+    clean_data_path = 'lib/models/CleanData.pkl'
+    with open(clean_data_path, 'rb') as f:
+        model.vectorizer = pickle.load(f)
+
+    return model.predict(df_new)
+
+
 # For each live file, iterate through and ID potential bots
 def get_status(file_name):
     global df_response
+    print("Running get_status")
 
     df = pd.read_csv(file_name, dtype={
         'no_follow': str,
@@ -63,10 +83,10 @@ def get_status(file_name):
         'target': str
     })
     
-    df['no_follow']  = df['no_follow'].map({'True':True}).fillna(False)
-    df['author_verified'] = df['author_verified'].map({'True':True}).fillna(False)
-    df['over_18'] = df['over_18'].map({'True':True}).fillna(False)
-    df['is_submitter'] = df['is_submitter'].map({'True':True}).fillna(False)
+    df['no_follow']  = df['no_follow'].map({'True':True, 'False':False}).fillna(False)
+    df['author_verified'] = df['author_verified'].map({'True':True, 'False':False}).fillna(False)
+    df['over_18'] = df['over_18'].map({'True':True, 'False':False}).fillna(False)
+    df['is_submitter'] = df['is_submitter'].map({'True':True, 'False':False}).fillna(False)
 
     columns = ['author', 'no_follow', 'author_verified', 'author_comment_karma', 'author_link_karma', 'over_18', 'is_submitter', 
                  'recent_avg_no_follow', 'recent_avg_gilded', 
@@ -74,14 +94,20 @@ def get_status(file_name):
                  'recent_avg_controversiality', 'recent_avg_ups', 'recent_avg_diff_ratio', 'recent_max_diff_ratio', 
                  'recent_avg_sentiment_polarity', 'recent_min_sentiment_polarity']
 
+    # columns = ['author', 'no_follow', 'author_verified', 'author_comment_karma', 'author_link_karma', 'over_18', 'is_submitter', 
+    #              'recent_num_comments', 'recent_num_last_30_days', 'recent_avg_no_follow', 'recent_avg_gilded', 
+    #              'recent_avg_responses', 'recent_percent_neg_score', 'recent_avg_score', 'recent_min_score', 
+    #              'recent_avg_controversiality', 'recent_avg_ups', 'recent_avg_diff_ratio', 'recent_max_diff_ratio', 
+    #              'recent_avg_sentiment_polarity', 'recent_min_sentiment_polarity']
 
     df = df[columns]
     #df['created_utc'] = df['created_utc'].apply(lambda x: time.mktime(dt.datetime.strptime(x, "%Y-%m-%d %H:%M:%S").timetuple()))
     #df['created_utc'] = pd.to_datetime(df['created_utc'].values, unit='s')
     
     #print (df)    
-    df['status'] = df.apply(query_status, axis=1)
-    print(df)
+    #df = df.apply(query_status, axis=1)
+    df['status'] = get_results(df)
+    #print(df)
     
     normies = df.loc[df['status'] == 'normal']
     bots = df.loc[df['status'] == 'bot']
@@ -90,7 +116,9 @@ def get_status(file_name):
     print("Number of troll comments:", len(trolls))
     print("Number of normal comments:", len(normies))
 
-    df = df[['author', 'status']]
+    #df = df[['author', 'status']]
+    df = df[['author', 'status', 'recent_avg_diff_ratio', 'author_verified', 'author_comment_karma', 'author_comment_karma' , 'author_link_karma', 'recent_avg_score', 'recent_max_diff_ratio', 'recent_avg_ups']]
+    
     if is_start:
         df_response = df
     else:
@@ -111,19 +139,23 @@ def main():
 
     if len(sys.argv) == 2:
         directory = sys.argv[1]
+        # itterate through folder
+        for filename in os.listdir(directory):        
+            if filename.endswith(".csv"):             
+                file = os.path.join(directory, filename)
+                print(f"Running {file}")
+                get_status(file)
+                continue                
     else:
         print("Usage: 4_getAllUserStatus.py <folder>")
-        return
+        file ="../Data/Run01/test_run/2_cleaned/LiveData_0_CleanedForQuery.csv"
+        #file ="../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining_subset.csv"
+        print(f"Running {file}")
+        get_status(file)
+        
 
-    # itterate through folder
-    for filename in os.listdir(directory):        
-        if filename.endswith(".csv"):             
-            file = os.path.join(directory, filename)
-            print(f"Running {file}")
-            get_status(file)
-            continue
-        else:
-            continue
+
+    
 
 
     df_response.to_csv(out_file)

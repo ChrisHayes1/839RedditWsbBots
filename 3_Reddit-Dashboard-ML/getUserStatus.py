@@ -37,7 +37,10 @@ class Botidentification():
         #clean_data = model.clean_data(user_json)
         #application.logger.info("Cleaned data: " + str(clean_data))
         
+        #print(f"data: {(user_json)}")
         prediction = model.predict(user_json)
+        
+        #print(f"pred: {prediction} \n {user_json['author', 'recent_avg_diff_ratio', 'author_verified', 'recent_max_diff_ratio']}")
 
         #print(prediction)
         # Return the prediction
@@ -51,8 +54,9 @@ class Botidentification():
             pred_text = 'Classification error'
 
         output = {'prediction': pred_text}
+        #print(f"pred: {pred_text}")
         #application.logger.info(output)
-        return prediction
+        return pred_text
 
 # Setup the Api resource routing here
 # Route the URL to the resource

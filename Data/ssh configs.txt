@@ -1,0 +1,28 @@
+Host RedditScraper_e1_CloudlabNode0
+  HostName c220g5-111026.wisc.cloudlab.us
+  Port 22
+  User jmadrek
+Host RedditScraper_e1_CloudlabNode1
+  HostName c220g5-111024.wisc.cloudlab.us
+  Port 22
+  User jmadrek
+Host RedditScraper_e1_CloudlabNode2
+  HostName c220g5-111005.wisc.cloudlab.us
+  Port 22
+  User jmadrek
+Host RedditScraper_e1_CloudlabNode3
+  HostName c220g5-111020.wisc.cloudlab.us
+  Port 22
+  User jmadrek
+Host RedditScraper_e2_CloudlabNode0
+  HostName c220g1-031106.wisc.cloudlab.us
+  Port 22
+  User jmadrek
+Host RedditScraper_e2_CloudlabNode1
+  HostName c220g1-031103.wisc.cloudlab.us
+  Port 22
+  User jmadrek
+Host RedditScraper_e2_CloudlabNode2
+  HostName c220g1-031123.wisc.cloudlab.us
+  Port 22
+  User jmadrek

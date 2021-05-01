@@ -1,9 +1,9 @@
 import pandas as pd
 
-in_file = "./7g1_run00_1_author_comments_and_attr.csv"
+in_file = "../Data/Run01/test_run/1_raw/preped/raw_set_2_preped.csv"
 #in_file = "./test_set.csv"
-out_file = "./raw_set_{}.csv"
-num_slices = 4
+out_file = "../Data/Run01/test_run/1_raw/preped/raw_set_2_preped_short_subset{}.csv"
+num_slices = 64
 
 print("About to read in file")
 df = pd.read_csv(in_file)

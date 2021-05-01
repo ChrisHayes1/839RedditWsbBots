@@ -8,7 +8,7 @@ import datetime
 
 CORE_LINK = "https://www.reddit.com/user/{}/comments.json?limit=25"
 file_in = "../Data/Run01/6n0_authors_dedup.txt"
-file_out = "/mydata/live_group1/7g1_run00_{}_author_comments_and_attr.csv"
+file_out = "/mydata/node0/7n0_{}_author_comments_and_attr.csv"
 
 reddit = praw.Reddit('ClientSecrets')
 df_final = pd.DataFrame()
@@ -18,12 +18,12 @@ columns = ["banned_by", "no_follow", "link_id", "gilded",
                "author_link_karma", "num_comments", "created_utc",
                "score", "over_18", "body", "downs", "is_submitter",
                "num_reports", "controversiality", "quarantine",
-               "ups"]
+               "ups", "recent_comments"]
 
 global_count = 0
 prev_count = 0
-save_point = 250
-print_point = 100
+save_point = 250 #every 25 authors
+print_point = 75
 file_max = 10000
 current_file = 1
 
@@ -51,7 +51,7 @@ def get_author_detail(row):
             row['author_verified'] = 'true' if author.verified else 'false'
             row['author_comment_karma'] = author.comment_karma
             row['author_link_karma'] = author.link_karma
-            #df_temp = pd.DataFrame()
+            df_temp = pd.DataFrame()
 
             for comment in author.comments.new(limit=25):
                 mod_row = row
@@ -78,11 +78,11 @@ def get_author_detail(row):
                 #deal with recent comments
                 # df_temp adds record after row is built
                 # but want to generate it prior to appending the current record
-                #prev_comments = df_temp.to_json(orient='records')
-                #mod_row['recent_comments'] = prev_comments
-                #df_temp = df_temp.append(mod_row, ignore_index=True)
-                #df_temp = df_temp[columns]
-                #df_temp = df_temp.drop(['recent_comments'], axis=1)                
+                prev_comments = df_temp.to_json(orient='records')
+                mod_row['recent_comments'] = prev_comments
+                df_temp = df_temp.append(mod_row, ignore_index=True)
+                df_temp = df_temp[columns]
+                df_temp = df_temp.drop(['recent_comments'], axis=1)                
                 #mod_row['recent_comments'] = ''
                 df_final = df_final.append(mod_row, ignore_index=True)
 
@@ -93,13 +93,13 @@ def get_author_detail(row):
         except UnboundLocalError:
             print(f"...Waring: Participant has no user name")
         except prawcore.exceptions.NotFound as e:
-            print(f"...Non 200 response - trying again - {auth_name}")
+            print(f"Non 200 response - trying again - {auth_name}")
             time.sleep(1)
             httpCount += 1            
             if httpCount >= 5:
-                print("...Breaking From Exception")
+                print("Breaking From Exception")
                 break
-            print(f"...Continuing From Exception {httpCount}")
+            print(f"Continuing From Exception {httpCount}")
             continue
         
         #break under normal circumstances
@@ -114,11 +114,11 @@ def get_author_detail(row):
         if (global_count == save_point):
             df_final.to_csv(file_out.format(current_file), index=False)
         else:
-            df_final.to_csv(file_out.format(current_file), mode='a', index=False,  header=False)
+            df_final.to_csv(file_out.format(current_file), mode='a', index=False)
     #files getting to large, going to split up
     if (global_count% file_max == 0):
         print(f"<- Starting new file {current_file} with gc = {global_count}->")
-        df_final.to_csv(file_out.format(current_file), mode='a', index=False, header=False)
+        df_final.to_csv(file_out.format(current_file), mode='a', index=False)
         df_final = pd.DataFrame()
         current_file += 1
     return row
@@ -126,8 +126,7 @@ def get_author_detail(row):
 
 
 def main():
-    start = datetime.datetime.now().strftime('%H:%M:%S')
-    print(f"Starting at {start}")
+    print(f"Starting at {datetime.datetime.now().strftime('%H:%M:%S')}")
     print("Collecting Author and Author Comment Details")
     global df_final
     global columns
@@ -143,12 +142,8 @@ def main():
 
 
     df_final = df_final[columns]
-    print(df_final)
-    df_final.to_csv(file_out.format(current_file), index=False)
-    #df_final.to_csv(file_out, index=False)
-
-    end = datetime.datetime.now().strftime('%H:%M:%S')
-    print(f"Started at {start} ending at {end}")
+    print(df_final.format(current_file))
+    df_final.to_csv(file_out, index=False)
 
 if __name__ == "__main__":
     main()

@@ -6,8 +6,9 @@ import datetime as dt
 import difflib
 from textblob import TextBlob
 
+subset_out = "../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorCommentDet_ReadyForCleaning.csv"
 
-with open('lib/data/training-dump.csv') as f:
+with open('../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorCommentDet.csv') as f:
     my_data = pd.read_csv(f, sep=',', dtype={
         "banned_by": str,
         "no_follow": bool,
@@ -56,17 +57,11 @@ with open('lib/data/training-dump.csv') as f:
         "ups": np.float64}).to_json(orient='records')
     row.to_json(orient='records').replace('\'', '').replace('\\\\', '\\').replace('[{', '{').replace('}]', '}')
 
-    # delete columns that have missing data or won't have meaningful values in real-time data
-    columns = ['banned_by', 'downs', 'quarantine', 'num_reports', 'num_comments', 'score', 'ups', 'controversiality',
-               'gilded']
-    my_data.drop(columns, inplace=True, axis=1)
+    
 
     # drop duplicates
-    my_data.drop_duplicates(inplace=True)
-
-    # format columns
-    my_data['created_utc'] = pd.to_datetime(my_data['created_utc'].values, unit='s')
-    my_data['body'] = my_data['body'].str.slice(stop=200).fillna('')
+    my_data.drop_duplicates(subset=['author','link_id','created_utc'], inplace=True)
+    
 
     # add our new stats columns
     my_data['recent_num_comments'] = pd.Series(np.zeros(len(my_data.index), np.int64))
@@ -106,7 +101,33 @@ print("Number of total authors: ", len(num_of_users))
 print("\nFixing ratios between classes")
 data = my_data[my_data['is_troll']]
 my_data = data.append(my_data[my_data['is_bot']].sample(n=len(data)*2))
+my_data = my_data.sort_values(by=['author','link_id','created_utc'])
+print(f"my_data = \n{my_data}")
+###################################
+#Added by todd to pull subset to match scoring approaches between this and live
+subset_columns = ["banned_by", "no_follow", "link_id", "gilded",
+               "author", "author_verified", "author_comment_karma",
+               "author_link_karma", "num_comments", "created_utc",
+               "score", "over_18", "body", "downs", "is_submitter",
+               "num_reports", "controversiality", "quarantine",
+               "ups", 'is_bot', 'is_troll']
 
+my_data_subset = my_data[subset_columns]
+my_data_subset = my_data_subset.sort_values(by=['author','link_id','created_utc'])
+my_data_subset['gilded'] = my_data_subset['gilded'].map({True:1.0, False:0.0}).fillna(0.0)
+print(f"my_data_subset = \n{my_data_subset}")
+my_data_subset.to_csv(subset_out, index=False)
+###################################
+
+
+# delete columns that have missing data or won't have meaningful values in real-time data
+columns = ['banned_by', 'downs', 'quarantine', 'num_reports', 'num_comments', 'score', 'ups', 'controversiality',
+            'gilded']
+my_data.drop(columns, inplace=True, axis=1)
+
+# format columns
+my_data['created_utc'] = pd.to_datetime(my_data['created_utc'].values, unit='s')
+my_data['body'] = my_data['body'].str.slice(stop=200).fillna('')
 
 def diff_ratio(_a, _b):
     return difflib.SequenceMatcher(a=_a, b=_b).ratio()
@@ -116,7 +137,7 @@ def last_30(a, b):
     return a - dt.timedelta(days=30) < pd.to_datetime(b, unit='s')
 
 
-num = 0;
+num = 0
 
 
 def calc_stats(comment):
@@ -193,5 +214,5 @@ new_data.drop(columns, inplace=True, axis=1)
 columns = ['recent_comments']
 new_data.drop(columns, inplace=True, axis=1)
 
-new_data.to_csv('lib/data/my_clean_data_training.csv', sep=',', index=False)
+new_data.to_csv('../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForCleaning_ByOrigApproach.csv', sep=',', index=False)
 print("The data cleaning finished correctly!!!")

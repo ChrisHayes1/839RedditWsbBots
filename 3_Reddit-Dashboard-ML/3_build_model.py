@@ -11,14 +11,14 @@ import numpy as np
 from model import RFModel
 
 
-with open('lib/data/my_clean_data_training.csv') as f:
+with open('../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining.csv') as f:
     my_data_training = pd.read_csv(f, sep=',')
-print("Clean Dataset Shape for Training: ", my_data_training.shape)
+print("Clean Dataset Shape for Trolls and Bots: ", my_data_training.shape)
 
-with open('lib/data/my_clean_data_normies.csv') as f:
+with open('../Data/TrainingData/NormieData/cleaned/NormieData_ReadyForTraining_small.csv') as f:
     my_data_normies = pd.read_csv(f, sep=',')
 print("Clean Dataset Shape for Normies: ", my_data_normies.shape)
-my_data_normies['target'] = 'normal'
+#my_data_normies['target'] = 'normal'
 
 my_data = my_data_training.append(my_data_normies)
 print("Clean Dataset Shape Combined: ", my_data.shape)
@@ -48,7 +48,7 @@ count_bot = len(my_data.loc[(my_data.target == 'bot')])
 print(f'After, normal count = {count_normal} and bot = {count_bot}')
 
 # Delete irrelevant columns
-columns = ['link_id', 'author', 'created_utc', 'body', 'recent_num_comments', 'recent_num_last_30_days']
+columns = ['link_id', 'author', 'created_utc', 'body', 'no_follow', 'over_18', 'is_submitter', 'recent_avg_no_follow']
 my_data.drop(columns, inplace=True, axis=1)
 print("After removing columns not considered: ", my_data.shape)
 
@@ -94,7 +94,7 @@ f.close()
 
 #y_train.to_csv("lib/data/Y_train.csv")
 # Create a Decision Tree Classifier
-clf = DecisionTreeClassifier(max_depth=4,
+clf = DecisionTreeClassifier(max_depth=3,
                              class_weight={'normal':1, 'bot':2.5, 'troll':5},
                              min_samples_leaf=100)
 
@@ -109,6 +109,8 @@ clf = DecisionTreeClassifier(max_depth=4,
 clf.fit(X_train, y_train)
 
 # prediction on test set
+print(f"Data:\n{X_test}")
+
 y_pred = clf.predict(X_test)
 
 # Model Accuracy, how often is the classifier correct?
