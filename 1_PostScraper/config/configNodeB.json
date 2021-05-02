@@ -3,7 +3,7 @@
     {
       "desc":"WSB",
       "name":"WallStreetBets",
-      "timeframe":["01/10/2021",  "02/05/2021"]
+      "timeframe":["01/10/2021", "01/19/2021", "01/26/2021", "01/29/2021", "02/05/2021"]
     },
     {
       "desc": "WSBControl",
@@ -13,20 +13,20 @@
     {
       "desc": "Control",
       "name": "YouShouldKnow",
-      "timeframe":["01/10/2021", "02/05/2021"]
+      "timeframe":["01/10/2021", "01/19/2021", "01/26/2021", "01/29/2021", "02/05/2021"]
     }
   ],
   "Globals": {
     "PULL_X_POSTS": 5,
-    "COMMENT_LVLS_SCRAPPED":3,
+    "COMMENT_LVLS_SCRAPPED":6,
     "SORT_COMMENTS_BY" : "top",
-    "POST_LIST_PATH" : "../Data/1_postList.csv",
-    "POST_LIST_PATH_BUILD" : "../Data/2_postList_WithScores.csv",
-    "POST_LIST_PATH_FILTERED" : "../Data/3b_postList_TopXPosts.csv",
-    "COMMENT_DATA_PATH" : "../Data/__comments.csv",
-    "AUTHOR_DATA_PATH" : "../Data/__authors.csv",
+    "POST_LIST_PATH" : "../Data/Run01/1_postList.csv",
+    "POST_LIST_PATH_BUILD" : "../Data/Run01/2_postList_WithScores.csv",
+    "POST_LIST_PATH_FILTERED" : "../Data/Run01/3a_postList_TopXPosts.txt",
+    "COMMENT_DATA_PATH" : "../Data/Run02/__comments.csv",
+    "AUTHOR_DATA_PATH" : "../Data/Run02/__authors.csv",
     "GET_POST_FLDS" : ["id", "created_utc", "stickied"],
-    "GET_COMMENT_FLDS" : ["postID", "depth", "depth_rank", "comment"],
+    "GET_COMMENT_FLDS" : ["postID", "depth", "depth_rank", "author", "comment"],
     "GET_AUTHOR_FLDS" : ["postID", "depth", "depth_rank", "author"]
   }
 }
