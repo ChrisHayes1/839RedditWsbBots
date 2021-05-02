@@ -20,7 +20,8 @@ RUNNING_TROLLS = False
 #outfile = '../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining_{}.csv'
 #outfile = '../Data/TrainingData/TrollsBots/cleaned/TrollData_ReadyForTraining_new.csv'
 #outfile = '../Data/Run01/test_run/2_cleaned/LiveData_{}_CleanedForQuery.csv'
-outfile = '../Data/Run01/live/clean/LiveData_n0_1_ReadyForTraining_subsetA.csv'
+outfile = '../Data/Run01/live/clean/LiveData_n0_2_ReadyForModel.csv'
+in_file = '../Data/Run01/live/raw/LiveData_n0_2_ReadyForClean.csv'
 current_run = 0
 
 def diff_ratio(_a, _b):
@@ -312,7 +313,7 @@ def main():
         #clean_comments("../Data/Run01/test_run/1_raw/preped/raw_set_2_preped_short_subset7.csv")
         #clean_comments("../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorCommentDet_ReadyForCleaning.csv")
         #clean_comments("../Data/TrainingData/NormieData/raw/7g1_run00_1_AuthorCommentDet_ReadyForCleaning_new.csv")
-        clean_comments('../Data/Run01/live/raw/LiveData_n0_1_ReadyForClean_subsetA.csv')
+        clean_comments(in_file)
 
     
 

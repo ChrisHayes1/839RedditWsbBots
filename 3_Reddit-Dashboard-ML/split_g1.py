@@ -2,11 +2,11 @@ import pandas as pd
 
 in_file = "../Data/Run01/live/raw/LiveData_n0_1_ReadyForClean.csv"
 #in_file = "./test_set.csv"
-out_file = "../Data/Run01/live/raw/LiveData_n0_1_ReadyForClean_subsetA.csv"
-num_slices = 64
+out_file = "../Data/Run01/live/raw/subsets/LiveData_n0_1_ReadyForClean_subset{}.csv"
+num_slices = 8
 head_size = 10000
 
-is_splices = False
+is_splices = True
 
 print("About to read in file")
 df = pd.read_csv(in_file)
