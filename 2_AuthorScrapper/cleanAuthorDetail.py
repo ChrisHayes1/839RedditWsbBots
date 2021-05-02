@@ -3,8 +3,10 @@ import pandas as pd
 
 #read in file
 
-file_in = "../Data/Run00/5_post_authors_new.txt"
-file_out = "../Data/Run00/6_authors_dedup_new.csv"
+#file_in = "../Data/TrainingData/TrollsBots/raw/old/TrollBot_AuthorCommentDet.csv"
+file_in = "../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorDetail_ReadyForCleanings.csv"
+
+file_out = "../Data/TrainingData/TrollsBots/raw/TrollBot_AuthorList.csv"
 
 
 def main():

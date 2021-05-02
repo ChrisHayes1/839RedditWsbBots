@@ -1,0 +1,73 @@
+python3 3_build_model.py 
+Clean Dataset Shape for Trolls and Bots:  (19653, 20)
+Clean Dataset Shape for Normies:  (33720, 20)
+Clean Dataset Shape Combined:  (53373, 20)
+Start: 53373
+After drop_dups: 53373
+Length of bot_authors = 305
+Pre, normal count = 33720 and bot = 13102
+After, normal count = 33720 and bot = 13102
+After removing columns not considered:  (53373, 15)
+Counter({'normal': 33720, 'bot': 13102, 'troll': 6551})
+Len of input x = 53373
+Len of input y = 53373
+Data:
+       author_comment_karma  author_link_karma  ...  recent_avg_sentiment_polarity  recent_min_sentiment_polarity
+4255                77497.0                1.0  ...                       0.423295                      -0.625000
+2831                22857.0             1267.0  ...                       0.051222                      -0.333333
+2624                 6158.0           849774.0  ...                       0.031762                      -0.500000
+10481                8822.0              987.0  ...                       0.048135                      -0.250000
+6678               102175.0            85217.0  ...                      -0.100000                      -0.200000
+...                     ...                ...  ...                            ...                            ...
+8496               178302.0            28716.0  ...                       0.062963                      -0.700000
+13908               18178.0            16711.0  ...                       0.000000                       0.000000
+14229              177162.0            22821.0  ...                       0.078977                      -0.500000
+21447               16466.0             3364.0  ...                       0.129858                      -0.500000
+20842               43074.0             6512.0  ...                       0.000000                       0.000000
+
+[16012 rows x 14 columns]
+Predicted   bot  normal  troll    All
+True                                 
+bot        3248     350    268   3866
+normal       76    9849    317  10242
+troll        71     125   1708   1904
+All        3395   10324   2293  16012
+Accuracy: 0.9246190357232076
+Mcc: 0.8560782592928817
+F1 : [0.89464261 0.95779442 0.8139147 ]
+Recall : [0.84014485 0.96162859 0.89705882]
+Precision: [0.95670103 0.9539907  0.74487571]
+recent_avg_diff_ratio            0.430971
+recent_num_comments              0.344060
+author_comment_karma             0.212614
+recent_max_diff_ratio            0.011644
+author_link_karma                0.000711
+recent_min_sentiment_polarity    0.000000
+recent_avg_sentiment_polarity    0.000000
+recent_avg_ups                   0.000000
+recent_avg_controversiality      0.000000
+recent_min_score                 0.000000
+recent_avg_score                 0.000000
+recent_percent_neg_score         0.000000
+recent_avg_responses             0.000000
+recent_num_last_30_days          0.000000
+dtype: float64
+Predicted   bot  normal  troll    All
+True                                 
+bot        7810     763    663   9236
+normal      179   22574    725  23478
+troll       162     284   4201   4647
+All        8151   23621   5589  37361
+Predicted   bot  normal  troll    All
+True                                 
+bot        3248     350    268   3866
+normal       76    9849    317  10242
+troll        71     125   1708   1904
+All        3395   10324   2293  16012
+Accuracy: 0.9246190357232076
+Mcc: 0.8560782592928817
+F1 : [0.89464261 0.95779442 0.8139147 ]
+Recall : [0.84014485 0.96162859 0.89705882]
+Precision: [0.95670103 0.9539907  0.74487571]
+Pickled classifier at lib/models/DecisionTreeClassifier.pkl
+Pickled vectorizer at lib/models/CleanData.pkl

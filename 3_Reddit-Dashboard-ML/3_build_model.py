@@ -15,7 +15,7 @@ with open('../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining.csv
     my_data_training = pd.read_csv(f, sep=',')
 print("Clean Dataset Shape for Trolls and Bots: ", my_data_training.shape)
 
-with open('../Data/TrainingData/NormieData/cleaned/NormieData_ReadyForTraining_small.csv') as f:
+with open('../Data/TrainingData/NormieData/cleaned/NormieData_ReadyForTraining_new.csv') as f:
     my_data_normies = pd.read_csv(f, sep=',')
 print("Clean Dataset Shape for Normies: ", my_data_normies.shape)
 #my_data_normies['target'] = 'normal'
@@ -48,7 +48,8 @@ count_bot = len(my_data.loc[(my_data.target == 'bot')])
 print(f'After, normal count = {count_normal} and bot = {count_bot}')
 
 # Delete irrelevant columns
-out_columns = ['author_verified',
+#'author_verified',
+out_columns = [
         'author_comment_karma',
         'author_link_karma',
         'recent_num_comments',
@@ -112,7 +113,7 @@ f.close()
 
 #y_train.to_csv("lib/data/Y_train.csv")
 # Create a Decision Tree Classifier
-clf = DecisionTreeClassifier(max_depth=4,
+clf = DecisionTreeClassifier(max_depth=3,
                              class_weight={'normal':1, 'bot':2.5, 'troll':5},
                              min_samples_leaf=100)
 

@@ -10,7 +10,8 @@ from model import RFModel
 
 gs = Botidentification()
 df_response = pd.DataFrame()
-out_file = "../Data/Run01/test_run/3_results/result.csv"
+#out_file = "../Data/Run01/test_run/3_results/result.csv"
+out_file = '../Data/Run01/live/results/LiveData_n0_1_Results_subsetA.csv'
 is_start = True
 
 print_point = 1000
@@ -30,7 +31,7 @@ def query_status(row):
     
     #try:
     row['status'] =  gs.get_user_status(df_new.values.tolist())
-    print(row[['author', 'status', 'recent_avg_diff_ratio', 'author_verified', 'author_comment_karma', 'author_comment_karma' , 'author_link_karma', 'recent_avg_score', 'recent_max_diff_ratio', 'recent_avg_ups']])
+    #print(row[['author', 'status', 'recent_avg_diff_ratio', 'author_verified', 'author_comment_karma', 'author_comment_karma' , 'author_link_karma', 'recent_avg_score', 'recent_max_diff_ratio', 'recent_avg_ups']])
     return row
     #except ValueError:
     #    return "error"
@@ -56,20 +57,15 @@ def get_status(file_name):
     print("Running get_status")
 
     df = pd.read_csv(file_name, dtype={
-        'no_follow': str,
         'link_id': str,
         'author': str,
         'author_verified': str,
         'author_comment_karma': np.float64,
         'author_link_karma': np.float64,
         'created_utc': str,
-        'over_18': str,
         'body': str,
-        'is_submitter': str,
         'recent_num_comments': np.float64,
         'recent_num_last_30_days' :np.float64,
-        'recent_avg_no_follow': np.float64,
-        'recent_avg_gilded': np.float64,
         'recent_avg_responses': np.float64,
         'recent_percent_neg_score': np.float64,
         'recent_avg_score': np.float64,
@@ -83,16 +79,24 @@ def get_status(file_name):
         'target': str
     })
     
-    df['no_follow']  = df['no_follow'].map({'True':True, 'False':False}).fillna(False)
+    df.fillna(0, inplace=True)
     df['author_verified'] = df['author_verified'].map({'True':True, 'False':False}).fillna(False)
-    df['over_18'] = df['over_18'].map({'True':True, 'False':False}).fillna(False)
-    df['is_submitter'] = df['is_submitter'].map({'True':True, 'False':False}).fillna(False)
 
-    columns = ['author', 'no_follow', 'author_verified', 'author_comment_karma', 'author_link_karma', 'over_18', 'is_submitter', 
-                 'recent_avg_no_follow', 'recent_avg_gilded', 
-                 'recent_avg_responses', 'recent_percent_neg_score', 'recent_avg_score', 'recent_min_score', 
-                 'recent_avg_controversiality', 'recent_avg_ups', 'recent_avg_diff_ratio', 'recent_max_diff_ratio', 
-                 'recent_avg_sentiment_polarity', 'recent_min_sentiment_polarity']
+    columns = ['author', listdir
+                 'author_comment_karma', 
+                 'author_link_karma', 
+                 'recent_num_comments', 
+                 'recent_num_last_30_days',
+                 'recent_avg_responses', 
+                 'recent_percent_neg_score', 
+                 'recent_avg_score', 
+                 'recent_min_score', 
+                 'recent_avg_controversiality', 
+                 'recent_avg_ups', 
+                 'recent_avg_diff_ratio', 
+                 'recent_max_diff_ratio', 
+                 'recent_avg_sentiment_polarity', 
+                 'recent_min_sentiment_polarity']
 
     # columns = ['author', 'no_follow', 'author_verified', 'author_comment_karma', 'author_link_karma', 'over_18', 'is_submitter', 
     #              'recent_num_comments', 'recent_num_last_30_days', 'recent_avg_no_follow', 'recent_avg_gilded', 
@@ -117,7 +121,7 @@ def get_status(file_name):
     print("Number of normal comments:", len(normies))
 
     #df = df[['author', 'status']]
-    df = df[['author', 'status', 'recent_avg_diff_ratio', 'author_verified', 'author_comment_karma', 'author_comment_karma' , 'author_link_karma', 'recent_avg_score', 'recent_max_diff_ratio', 'recent_avg_ups']]
+    df = df[['author', 'status', 'recent_avg_diff_ratio', 'recent_max_diff_ratio',  'author_comment_karma' , 'author_link_karma']]
     
     if is_start:
         df_response = df
@@ -148,7 +152,8 @@ def main():
                 continue                
     else:
         print("Usage: 4_getAllUserStatus.py <folder>")
-        file ="../Data/Run01/test_run/2_cleaned/LiveData_0_CleanedForQuery.csv"
+        #file ="../Data/Run01/test_run/2_cleaned/LiveData_0_CleanedForQuery.csv"
+        file = '../Data/Run01/live/clean/LiveData_n0_1_ReadyForTraining_subsetA.csv'
         #file ="../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining_subset.csv"
         print(f"Running {file}")
         get_status(file)
