@@ -20,8 +20,8 @@ RUNNING_TROLLS = False
 #outfile = '../Data/TrainingData/TrollsBots/cleaned/TrollBot_ReadyForTraining_{}.csv'
 #outfile = '../Data/TrainingData/TrollsBots/cleaned/TrollData_ReadyForTraining_new.csv'
 #outfile = '../Data/Run01/test_run/2_cleaned/LiveData_{}_CleanedForQuery.csv'
-outfile = '../Data/Run01/live/clean/LiveData_n0_2_ReadyForModel.csv'
-in_file = '../Data/Run01/live/raw/LiveData_n0_2_ReadyForClean.csv'
+outfile = '../Data/Run01/live_data/clean/LiveData_n2f_1_ReadyForModel.csv'
+in_file = '../Data/Run01/live_data/raw/LiveData_n2f_1_ReadyForClean.csv'
 current_run = 0
 
 def diff_ratio(_a, _b):

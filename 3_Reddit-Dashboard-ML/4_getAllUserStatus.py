@@ -11,7 +11,7 @@ from model import RFModel
 gs = Botidentification()
 df_response = pd.DataFrame()
 #out_file = "../Data/Run01/test_run/3_results/result.csv"
-out_file = '../Data/Run01/live/results/LiveData_n0_1_Results_subsetA.csv'
+out_file = '../Data/Run01/live_data/results/LiveData_Results_n0_{}.csv'
 is_start = True
 
 print_point = 1000
@@ -82,7 +82,7 @@ def get_status(file_name):
     df.fillna(0, inplace=True)
     df['author_verified'] = df['author_verified'].map({'True':True, 'False':False}).fillna(False)
 
-    columns = ['author', listdir
+    columns = ['author', 
                  'author_comment_karma', 
                  'author_link_karma', 
                  'recent_num_comments', 
@@ -158,11 +158,6 @@ def main():
         print(f"Running {file}")
         get_status(file)
         
-
-
-    
-
-
     df_response.to_csv(out_file)
 
     end = dt.datetime.now().strftime('%H:%M:%S')
