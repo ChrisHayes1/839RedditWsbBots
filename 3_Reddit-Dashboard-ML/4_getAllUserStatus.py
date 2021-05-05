@@ -11,7 +11,7 @@ from model import RFModel
 gs = Botidentification()
 df_response = pd.DataFrame()
 #out_file = "../Data/Run01/test_run/3_results/result.csv"
-out_file = '../Data/Run01/live_data/results/LiveData_Results_n0_{}.csv'
+out_file = '../Data/Run01/live_data/results/LiveData_Results_node0_final.csv'
 is_start = True
 
 print_point = 1000
@@ -54,6 +54,7 @@ def get_results(df):
 # For each live file, iterate through and ID potential bots
 def get_status(file_name):
     global df_response
+    global is_start
     print("Running get_status")
 
     df = pd.read_csv(file_name, dtype={
@@ -125,8 +126,9 @@ def get_status(file_name):
     
     if is_start:
         df_response = df
+        is_start=False
     else:
-        df_response = df_response.append(df, header=False)
+        df_response = df_response.append(df)
 
     
     #print(gs.get_user_status(df))
