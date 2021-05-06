@@ -11,7 +11,7 @@ from model import RFModel
 gs = Botidentification()
 df_response = pd.DataFrame()
 #out_file = "../Data/Run01/test_run/3_results/result.csv"
-out_file = '../Data/Run01/live_data/results/LiveData_Results_node0_final.csv'
+out_file = '../Data/Run01/live_data/results/LiveData_Results_node0_finalWithUTC.csv'
 is_start = True
 
 print_point = 1000
@@ -37,7 +37,7 @@ def query_status(row):
     #    return "error"
     
 def get_results(df):
-    df_new = df.drop(columns='author')
+    df_new = df.drop(columns=['author', 'created_utc'])
     model = RFModel()
 
     clf_path = 'lib/models/DecisionTreeClassifier.pkl'
@@ -84,6 +84,7 @@ def get_status(file_name):
     df['author_verified'] = df['author_verified'].map({'True':True, 'False':False}).fillna(False)
 
     columns = ['author', 
+                 'created_utc',
                  'author_comment_karma', 
                  'author_link_karma', 
                  'recent_num_comments', 
@@ -122,7 +123,7 @@ def get_status(file_name):
     print("Number of normal comments:", len(normies))
 
     #df = df[['author', 'status']]
-    df = df[['author', 'status', 'recent_avg_diff_ratio', 'recent_max_diff_ratio',  'author_comment_karma' , 'author_link_karma']]
+    df = df[['author', 'status', 'created_utc', 'recent_avg_diff_ratio', 'recent_max_diff_ratio',  'author_comment_karma' , 'author_link_karma']]
     
     if is_start:
         df_response = df
